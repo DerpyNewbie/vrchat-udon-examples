@@ -50,7 +50,7 @@ public class DerpyGun : UdonSharpBehaviour
 
     // Logics
 
-    public void Shoot(bool isShooting)
+    private void Shoot(bool isShooting)
     {
         Debug.Log($"DerpyGun: Shooting {isShooting}.");
         emission.enabled = isShooting;

@@ -1,7 +1,5 @@
 
 using UdonSharp;
-
-using VRC.SDKBase;
 using VRC.Udon;
 
 public class DerpyGunSecondaryHold : UdonSharpBehaviour
@@ -10,11 +8,11 @@ public class DerpyGunSecondaryHold : UdonSharpBehaviour
 
     public override void OnPickup()
     {
-        derpyGun.SendCustomEvent("OnSecondaryHoldPickup");
+        derpyGun.SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "OnSecondaryHoldPickup");
     }
 
     public override void OnDrop()
     {
-        derpyGun.SendCustomEvent("OnSecondaryHoldDrop");
+        derpyGun.SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "OnSecondaryHoldDrop");
     }
 }
