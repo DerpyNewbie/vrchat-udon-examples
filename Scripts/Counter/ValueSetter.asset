@@ -1,0 +1,955 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
+  m_Name: ValueSetter
+  m_EditorClassIdentifier: 
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 2e33555471c041c4b9175e54941a38ea,
+    type: 2}
+  udonAssembly: ".data_start\r\n\r\n    .export counter\r\n    .export operation\r\n\r\n
+    \   __refl_const_intnl_udonTypeID: %SystemInt64, null\r\n    __refl_const_intnl_udonTypeName:
+    %SystemString, null\r\n    operation: %SystemInt32, null\r\n    counter: %VRCUdonUdonBehaviour,
+    null\r\n    Operation_ADD: %SystemInt32, null\r\n    Operation_RESET: %SystemInt32,
+    null\r\n    Operation_SUBTRACT: %SystemInt32, null\r\n    __0_const_intnl_VRCUdonCommonInterfacesNetworkEventTarget:
+    %VRCUdonCommonInterfacesNetworkEventTarget, null\r\n    __0_const_intnl_SystemString:
+    %SystemString, null\r\n    __1_const_intnl_SystemString: %SystemString, null\r\n
+    \   __2_const_intnl_SystemString: %SystemString, null\r\n    __3_const_intnl_SystemString:
+    %SystemString, null\r\n    __0_const_intnl_SystemUInt32: %SystemUInt32, null\r\n
+    \   __0_intnl_SystemBoolean: %SystemBoolean, null\r\n    __1_intnl_SystemBoolean:
+    %SystemBoolean, null\r\n    __2_intnl_SystemBoolean: %SystemBoolean, null\r\n
+    \   __0_intnl_SystemInt32: %SystemInt32, null\r\n    __1_intnl_SystemInt32: %SystemInt32,
+    null\r\n    __2_intnl_SystemInt32: %SystemInt32, null\r\n    __0_intnl_returnTarget_UInt32:
+    %SystemUInt32, null\r\n\r\n.data_end\r\n\r\n        \r\n         # using UdonSharp;\r\n
+    \       \r\n         # using UnityEngine;\r\n        \r\n         # using VRC.Udon;\r\n
+    \       \r\n         # using VRC.Udon.Common.Interfaces;\r\n        \r\n         #
+    public class ValueSetter : UdonSharpBehaviour\r\n.code_start\r\n        \r\n         #
+    public UdonBehaviour counter;\r\n        \r\n         # [Tooltip(\"Operation types
+    are: {RESET = 0, ADD = 1, SUBTRACT = 2}. defaults 0.\")]\r\n        \r\n         #
+    public int operation = 0;\r\n        \r\n         # private int Operation_RESET
+    = 0;\r\n        \r\n         # private int Operation_ADD = 1;\r\n        \r\n
+    \        # private int Operation_SUBTRACT = 2;\r\n        \r\n         # public
+    override void Interact()\r\n    .export _interact\r\n        \r\n    _interact:\r\n
+    \       \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        \r\n         # {\r\n        \r\n         # if (operation
+    == Operation_RESET)\r\n        PUSH, operation\r\n        PUSH, __0_intnl_SystemInt32\r\n
+    \       COPY\r\n        PUSH, __0_intnl_SystemInt32\r\n        PUSH, Operation_RESET\r\n
+    \       PUSH, __0_intnl_SystemBoolean\r\n        EXTERN, \"SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean\"\r\n
+    \       PUSH, __0_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000080\r\n
+    \       \r\n         # {\r\n        \r\n         # counter.SendCustomNetworkEvent(NetworkEventTarget.All,
+    \"Reset\");\r\n        PUSH, counter\r\n        PUSH, __0_const_intnl_VRCUdonCommonInterfacesNetworkEventTarget\r\n
+    \       PUSH, __1_const_intnl_SystemString\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid\"\r\n
+    \       JUMP, 0x00000150\r\n        \r\n         # else if (operation == Operation_ADD)\r\n
+    \       PUSH, operation\r\n        PUSH, __1_intnl_SystemInt32\r\n        COPY\r\n
+    \       PUSH, __1_intnl_SystemInt32\r\n        PUSH, Operation_ADD\r\n        PUSH,
+    __1_intnl_SystemBoolean\r\n        EXTERN, \"SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean\"\r\n
+    \       PUSH, __1_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x000000EC\r\n
+    \       \r\n         # {\r\n        \r\n         # counter.SendCustomNetworkEvent(NetworkEventTarget.All,
+    \"Increment\");\r\n        PUSH, counter\r\n        PUSH, __0_const_intnl_VRCUdonCommonInterfacesNetworkEventTarget\r\n
+    \       PUSH, __2_const_intnl_SystemString\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid\"\r\n
+    \       JUMP, 0x00000150\r\n        \r\n         # else if (operation == Operation_SUBTRACT)\r\n
+    \       PUSH, operation\r\n        PUSH, __2_intnl_SystemInt32\r\n        COPY\r\n
+    \       PUSH, __2_intnl_SystemInt32\r\n        PUSH, Operation_SUBTRACT\r\n        PUSH,
+    __2_intnl_SystemBoolean\r\n        EXTERN, \"SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean\"\r\n
+    \       PUSH, __2_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000150\r\n
+    \       \r\n         # {\r\n        \r\n         # counter.SendCustomNetworkEvent(NetworkEventTarget.All,
+    \"Subtract\");\r\n        PUSH, counter\r\n        PUSH, __0_const_intnl_VRCUdonCommonInterfacesNetworkEventTarget\r\n
+    \       PUSH, __3_const_intnl_SystemString\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid\"\r\n
+    \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n.code_end\r\n"
+  assemblyError: 
+  sourceCsScript: {fileID: 11500000, guid: c4ccac92eb0ebba4c8e4c0c3bb204bdb, type: 3}
+  behaviourIDHeapVarName: __refl_const_intnl_udonTypeID
+  compileErrors: []
+  debugInfo:
+    serializedDebugSpans:
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 0
+      endSourceChar: 2
+      line: 0
+      lineChar: 0
+      spanCodeSection: "\r\n"
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 2
+      endSourceChar: 2
+      line: 1
+      lineChar: 0
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 2
+      endSourceChar: 8
+      line: 1
+      lineChar: 0
+      spanCodeSection: 'using '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 8
+      endSourceChar: 20
+      line: 1
+      lineChar: 6
+      spanCodeSection: "UdonSharp;\r\n"
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 20
+      endSourceChar: 26
+      line: 2
+      lineChar: 0
+      spanCodeSection: 'using '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 26
+      endSourceChar: 40
+      line: 2
+      lineChar: 6
+      spanCodeSection: "UnityEngine;\r\n"
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 40
+      endSourceChar: 46
+      line: 3
+      lineChar: 0
+      spanCodeSection: 'using '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 46
+      endSourceChar: 46
+      line: 3
+      lineChar: 6
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 46
+      endSourceChar: 50
+      line: 3
+      lineChar: 6
+      spanCodeSection: VRC.
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 50
+      endSourceChar: 57
+      line: 3
+      lineChar: 10
+      spanCodeSection: "Udon;\r\n"
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 57
+      endSourceChar: 63
+      line: 4
+      lineChar: 0
+      spanCodeSection: 'using '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 63
+      endSourceChar: 63
+      line: 4
+      lineChar: 6
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 63
+      endSourceChar: 63
+      line: 4
+      lineChar: 6
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 63
+      endSourceChar: 63
+      line: 4
+      lineChar: 6
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 63
+      endSourceChar: 67
+      line: 4
+      lineChar: 6
+      spanCodeSection: VRC.
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 67
+      endSourceChar: 72
+      line: 4
+      lineChar: 10
+      spanCodeSection: Udon.
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 72
+      endSourceChar: 79
+      line: 4
+      lineChar: 15
+      spanCodeSection: Common.
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 79
+      endSourceChar: 94
+      line: 4
+      lineChar: 22
+      spanCodeSection: "Interfaces;\r\n\r\n"
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 94
+      endSourceChar: 119
+      line: 6
+      lineChar: 0
+      spanCodeSection: 'public class ValueSetter '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 119
+      endSourceChar: 121
+      line: 6
+      lineChar: 25
+      spanCodeSection: ': '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 121
+      endSourceChar: 121
+      line: 6
+      lineChar: 27
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 121
+      endSourceChar: 148
+      line: 6
+      lineChar: 27
+      spanCodeSection: "UdonSharpBehaviour\r\n{\r\n    "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 148
+      endSourceChar: 155
+      line: 8
+      lineChar: 4
+      spanCodeSection: 'public '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 155
+      endSourceChar: 155
+      line: 8
+      lineChar: 11
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 155
+      endSourceChar: 232
+      line: 8
+      lineChar: 11
+      spanCodeSection: "UdonBehaviour counter;\r\n    // Can't use enum. so using
+        string instead.\r\n    "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 232
+      endSourceChar: 233
+      line: 10
+      lineChar: 4
+      spanCodeSection: '['
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 233
+      endSourceChar: 233
+      line: 10
+      lineChar: 5
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 233
+      endSourceChar: 241
+      line: 10
+      lineChar: 5
+      spanCodeSection: Tooltip(
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 241
+      endSourceChar: 241
+      line: 10
+      lineChar: 13
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 241
+      endSourceChar: 326
+      line: 10
+      lineChar: 13
+      spanCodeSection: "\"Operation types are: {RESET = 0, ADD = 1, SUBTRACT = 2}.
+        defaults 0.\")]\r\n    public "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 326
+      endSourceChar: 326
+      line: 11
+      lineChar: 11
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 326
+      endSourceChar: 352
+      line: 11
+      lineChar: 11
+      spanCodeSection: "int operation = 0;\r\n\r\n    "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 352
+      endSourceChar: 360
+      line: 13
+      lineChar: 4
+      spanCodeSection: 'private '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 360
+      endSourceChar: 360
+      line: 13
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 360
+      endSourceChar: 390
+      line: 13
+      lineChar: 12
+      spanCodeSection: "int Operation_RESET = 0;\r\n    "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 390
+      endSourceChar: 398
+      line: 14
+      lineChar: 4
+      spanCodeSection: 'private '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 398
+      endSourceChar: 398
+      line: 14
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 398
+      endSourceChar: 426
+      line: 14
+      lineChar: 12
+      spanCodeSection: "int Operation_ADD = 1;\r\n    "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 426
+      endSourceChar: 434
+      line: 15
+      lineChar: 4
+      spanCodeSection: 'private '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 434
+      endSourceChar: 434
+      line: 15
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 434
+      endSourceChar: 469
+      line: 15
+      lineChar: 12
+      spanCodeSection: "int Operation_SUBTRACT = 2;\r\n\r\n    "
+    - startInstruction: 0
+      endInstruction: 19
+      startSourceChar: 469
+      endSourceChar: 506
+      line: 17
+      lineChar: 4
+      spanCodeSection: "public override void Interact()\r\n    "
+    - startInstruction: 20
+      endInstruction: 19
+      startSourceChar: 506
+      endSourceChar: 517
+      line: 18
+      lineChar: 4
+      spanCodeSection: "{\r\n        "
+    - startInstruction: 20
+      endInstruction: 19
+      startSourceChar: 517
+      endSourceChar: 521
+      line: 19
+      lineChar: 8
+      spanCodeSection: if (
+    - startInstruction: 20
+      endInstruction: 19
+      startSourceChar: 521
+      endSourceChar: 521
+      line: 19
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 20
+      endInstruction: 39
+      startSourceChar: 521
+      endSourceChar: 534
+      line: 19
+      lineChar: 12
+      spanCodeSection: 'operation == '
+    - startInstruction: 40
+      endInstruction: 87
+      startSourceChar: 534
+      endSourceChar: 560
+      line: 19
+      lineChar: 25
+      spanCodeSection: "Operation_RESET)\r\n        "
+    - startInstruction: 88
+      endInstruction: 87
+      startSourceChar: 560
+      endSourceChar: 575
+      line: 20
+      lineChar: 8
+      spanCodeSection: "{\r\n            "
+    - startInstruction: 88
+      endInstruction: 87
+      startSourceChar: 575
+      endSourceChar: 575
+      line: 21
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 88
+      endInstruction: 87
+      startSourceChar: 575
+      endSourceChar: 606
+      line: 21
+      lineChar: 12
+      spanCodeSection: counter.SendCustomNetworkEvent(
+    - startInstruction: 88
+      endInstruction: 87
+      startSourceChar: 606
+      endSourceChar: 606
+      line: 21
+      lineChar: 43
+      spanCodeSection: 
+    - startInstruction: 88
+      endInstruction: 87
+      startSourceChar: 606
+      endSourceChar: 625
+      line: 21
+      lineChar: 43
+      spanCodeSection: NetworkEventTarget.
+    - startInstruction: 88
+      endInstruction: 87
+      startSourceChar: 625
+      endSourceChar: 630
+      line: 21
+      lineChar: 62
+      spanCodeSection: 'All, '
+    - startInstruction: 88
+      endInstruction: 127
+      startSourceChar: 630
+      endSourceChar: 660
+      line: 21
+      lineChar: 67
+      spanCodeSection: "\"Reset\");\r\n        }\r\n        "
+    - startInstruction: 128
+      endInstruction: 127
+      startSourceChar: 660
+      endSourceChar: 665
+      line: 23
+      lineChar: 8
+      spanCodeSection: 'else '
+    - startInstruction: 128
+      endInstruction: 127
+      startSourceChar: 665
+      endSourceChar: 669
+      line: 23
+      lineChar: 13
+      spanCodeSection: if (
+    - startInstruction: 128
+      endInstruction: 127
+      startSourceChar: 669
+      endSourceChar: 669
+      line: 23
+      lineChar: 17
+      spanCodeSection: 
+    - startInstruction: 128
+      endInstruction: 147
+      startSourceChar: 669
+      endSourceChar: 682
+      line: 23
+      lineChar: 17
+      spanCodeSection: 'operation == '
+    - startInstruction: 148
+      endInstruction: 195
+      startSourceChar: 682
+      endSourceChar: 706
+      line: 23
+      lineChar: 30
+      spanCodeSection: "Operation_ADD)\r\n        "
+    - startInstruction: 196
+      endInstruction: 195
+      startSourceChar: 706
+      endSourceChar: 721
+      line: 24
+      lineChar: 8
+      spanCodeSection: "{\r\n            "
+    - startInstruction: 196
+      endInstruction: 195
+      startSourceChar: 721
+      endSourceChar: 721
+      line: 25
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 196
+      endInstruction: 195
+      startSourceChar: 721
+      endSourceChar: 752
+      line: 25
+      lineChar: 12
+      spanCodeSection: counter.SendCustomNetworkEvent(
+    - startInstruction: 196
+      endInstruction: 195
+      startSourceChar: 752
+      endSourceChar: 752
+      line: 25
+      lineChar: 43
+      spanCodeSection: 
+    - startInstruction: 196
+      endInstruction: 195
+      startSourceChar: 752
+      endSourceChar: 771
+      line: 25
+      lineChar: 43
+      spanCodeSection: NetworkEventTarget.
+    - startInstruction: 196
+      endInstruction: 195
+      startSourceChar: 771
+      endSourceChar: 776
+      line: 25
+      lineChar: 62
+      spanCodeSection: 'All, '
+    - startInstruction: 196
+      endInstruction: 235
+      startSourceChar: 776
+      endSourceChar: 810
+      line: 25
+      lineChar: 67
+      spanCodeSection: "\"Increment\");\r\n        }\r\n        "
+    - startInstruction: 236
+      endInstruction: 235
+      startSourceChar: 810
+      endSourceChar: 815
+      line: 27
+      lineChar: 8
+      spanCodeSection: 'else '
+    - startInstruction: 236
+      endInstruction: 235
+      startSourceChar: 815
+      endSourceChar: 819
+      line: 27
+      lineChar: 13
+      spanCodeSection: if (
+    - startInstruction: 236
+      endInstruction: 235
+      startSourceChar: 819
+      endSourceChar: 819
+      line: 27
+      lineChar: 17
+      spanCodeSection: 
+    - startInstruction: 236
+      endInstruction: 255
+      startSourceChar: 819
+      endSourceChar: 832
+      line: 27
+      lineChar: 17
+      spanCodeSection: 'operation == '
+    - startInstruction: 256
+      endInstruction: 303
+      startSourceChar: 832
+      endSourceChar: 861
+      line: 27
+      lineChar: 30
+      spanCodeSection: "Operation_SUBTRACT)\r\n        "
+    - startInstruction: 304
+      endInstruction: 303
+      startSourceChar: 861
+      endSourceChar: 876
+      line: 28
+      lineChar: 8
+      spanCodeSection: "{\r\n            "
+    - startInstruction: 304
+      endInstruction: 303
+      startSourceChar: 876
+      endSourceChar: 876
+      line: 29
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 304
+      endInstruction: 303
+      startSourceChar: 876
+      endSourceChar: 907
+      line: 29
+      lineChar: 12
+      spanCodeSection: counter.SendCustomNetworkEvent(
+    - startInstruction: 304
+      endInstruction: 303
+      startSourceChar: 907
+      endSourceChar: 907
+      line: 29
+      lineChar: 43
+      spanCodeSection: 
+    - startInstruction: 304
+      endInstruction: 303
+      startSourceChar: 907
+      endSourceChar: 926
+      line: 29
+      lineChar: 43
+      spanCodeSection: NetworkEventTarget.
+    - startInstruction: 304
+      endInstruction: 303
+      startSourceChar: 926
+      endSourceChar: 931
+      line: 29
+      lineChar: 62
+      spanCodeSection: 'All, '
+    - startInstruction: 304
+      endInstruction: 304
+      startSourceChar: 931
+      endSourceChar: 931
+      line: 29
+      lineChar: 67
+      spanCodeSection: 
+  hasInteractEvent: 1
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: fieldDefinitions
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[UdonSharp.FieldDefinition,
+        UdonSharp.Editor]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 5
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: counter
+    - Name: $v
+      Entry: 7
+      Data: 2|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 3|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 7
+      Data: 4|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: VRC.Udon.UdonBehaviour, VRC.Udon
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: declarationType
+      Entry: 3
+      Data: 1
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: VRCUdonUdonBehaviour
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: counter
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: counter
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 5|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: operation
+    - Name: $v
+      Entry: 7
+      Data: 6|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 7|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 7
+      Data: 8|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: System.Int32, mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: declarationType
+      Entry: 3
+      Data: 1
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: SystemInt32
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: operation
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: operation
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 9|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 10|UnityEngine.TooltipAttribute, UnityEngine.CoreModule
+    - Name: tooltip
+      Entry: 1
+      Data: 'Operation types are: {RESET = 0, ADD = 1, SUBTRACT = 2}. defaults 0.'
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Operation_RESET
+    - Name: $v
+      Entry: 7
+      Data: 11|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 12|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 9
+      Data: 8
+    - Name: declarationType
+      Entry: 3
+      Data: 2
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: SystemInt32
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: Operation_RESET
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: Operation_RESET
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 13|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Operation_ADD
+    - Name: $v
+      Entry: 7
+      Data: 14|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 15|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 9
+      Data: 8
+    - Name: declarationType
+      Entry: 3
+      Data: 2
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: SystemInt32
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: Operation_ADD
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: Operation_ADD
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 16|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Operation_SUBTRACT
+    - Name: $v
+      Entry: 7
+      Data: 17|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 18|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 9
+      Data: 8
+    - Name: declarationType
+      Entry: 3
+      Data: 2
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: SystemInt32
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: Operation_SUBTRACT
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: Operation_SUBTRACT
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 19|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
