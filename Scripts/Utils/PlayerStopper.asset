@@ -29,30 +29,28 @@ MonoBehaviour:
     %SystemString, null\r\n    __1_const_intnl_SystemString: %SystemString, null\r\n
     \   __2_const_intnl_SystemString: %SystemString, null\r\n    __3_const_intnl_SystemString:
     %SystemString, null\r\n    __4_const_intnl_SystemString: %SystemString, null\r\n
-    \   __5_const_intnl_SystemString: %SystemString, null\r\n    __6_const_intnl_SystemString:
-    %SystemString, null\r\n    __0_const_intnl_exitJumpLoc_UInt32: %SystemUInt32,
-    null\r\n    __0_const_intnl_SystemUInt32: %SystemUInt32, null\r\n    __1_const_intnl_exitJumpLoc_UInt32:
-    %SystemUInt32, null\r\n    __0_const_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi,
-    null\r\n    __0_intnl_SystemBoolean: %SystemBoolean, null\r\n    __1_intnl_SystemBoolean:
-    %SystemBoolean, null\r\n    __2_intnl_SystemBoolean: %SystemBoolean, null\r\n
-    \   __3_intnl_SystemBoolean: %SystemBoolean, null\r\n    __4_intnl_SystemBoolean:
-    %SystemBoolean, null\r\n    __0_intnl_UnityEngineQuaternion: %UnityEngineQuaternion,
-    null\r\n    __0_intnl_interpolatedStr_String: %SystemString, null\r\n    __0_intnl_SystemString:
-    %SystemString, null\r\n    __1_intnl_interpolatedStr_String: %SystemString, null\r\n
-    \   __1_intnl_SystemString: %SystemString, null\r\n    __2_intnl_interpolatedStr_String:
-    %SystemString, null\r\n    __2_intnl_SystemString: %SystemString, null\r\n    __3_intnl_SystemString:
-    %SystemString, null\r\n    __4_intnl_SystemString: %SystemString, null\r\n    __5_intnl_SystemString:
-    %SystemString, null\r\n    __6_intnl_SystemString: %SystemString, null\r\n    __7_intnl_SystemString:
-    %SystemString, null\r\n    __8_intnl_SystemString: %SystemString, null\r\n    __9_intnl_SystemString:
-    %SystemString, null\r\n    __0_intnl_oldReturnLoc_UInt32: %SystemUInt32, null\r\n
-    \   __0_intnl_returnTarget_UInt32: %SystemUInt32, null\r\n    __1_intnl_oldReturnLoc_UInt32:
-    %SystemUInt32, null\r\n    __0_intnl_UnityEngineVector3: %UnityEngineVector3,
-    null\r\n    __0_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null\r\n
-    \   __1_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null\r\n    __2_intnl_VRCSDKBaseVRCPlayerApi:
-    %VRCSDKBaseVRCPlayerApi, null\r\n\r\n.data_end\r\n\r\n        \r\n         # using
-    UdonSharp;\r\n        \r\n         # using UnityEngine;\r\n        \r\n         #
-    using UnityEngine.UI;\r\n        \r\n         # using VRC.SDKBase;\r\n        \r\n
-    \        # public class PlayerStopper : UdonSharpBehaviour\r\n.code_start\r\n
+    \   __5_const_intnl_SystemString: %SystemString, null\r\n    __0_const_intnl_exitJumpLoc_UInt32:
+    %SystemUInt32, null\r\n    __0_const_intnl_SystemUInt32: %SystemUInt32, null\r\n
+    \   __1_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null\r\n    __0_const_intnl_VRCSDKBaseVRCPlayerApi:
+    %VRCSDKBaseVRCPlayerApi, null\r\n    __0_intnl_SystemBoolean: %SystemBoolean,
+    null\r\n    __1_intnl_SystemBoolean: %SystemBoolean, null\r\n    __2_intnl_SystemBoolean:
+    %SystemBoolean, null\r\n    __3_intnl_SystemBoolean: %SystemBoolean, null\r\n
+    \   __4_intnl_SystemBoolean: %SystemBoolean, null\r\n    __0_intnl_UnityEngineQuaternion:
+    %UnityEngineQuaternion, null\r\n    __0_intnl_interpolatedStr_String: %SystemString,
+    null\r\n    __0_intnl_SystemString: %SystemString, null\r\n    __1_intnl_interpolatedStr_String:
+    %SystemString, null\r\n    __1_intnl_SystemString: %SystemString, null\r\n    __2_intnl_SystemString:
+    %SystemString, null\r\n    __3_intnl_SystemString: %SystemString, null\r\n    __4_intnl_SystemString:
+    %SystemString, null\r\n    __5_intnl_SystemString: %SystemString, null\r\n    __6_intnl_SystemString:
+    %SystemString, null\r\n    __7_intnl_SystemString: %SystemString, null\r\n    __8_intnl_SystemString:
+    %SystemString, null\r\n    __9_intnl_SystemString: %SystemString, null\r\n    __0_intnl_oldReturnLoc_UInt32:
+    %SystemUInt32, null\r\n    __0_intnl_returnTarget_UInt32: %SystemUInt32, null\r\n
+    \   __1_intnl_oldReturnLoc_UInt32: %SystemUInt32, null\r\n    __0_intnl_UnityEngineVector3:
+    %UnityEngineVector3, null\r\n    __0_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi,
+    null\r\n    __1_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null\r\n
+    \   __2_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null\r\n\r\n.data_end\r\n\r\n
+    \       \r\n         # using UdonSharp;\r\n        \r\n         # using UnityEngine;\r\n
+    \       \r\n         # using UnityEngine.UI;\r\n        \r\n         # using VRC.SDKBase;\r\n
+    \       \r\n         # public class PlayerStopper : UdonSharpBehaviour\r\n.code_start\r\n
     \       \r\n         # [UdonSynced]\r\n        \r\n         # public bool enableTeleport
     = true;\r\n        \r\n         # public string displayName = \"\uFFFDL\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDN\";\r\n
     \       \r\n         # public Transform spawnPos = null;\r\n        \r\n         #
@@ -65,17 +63,13 @@ MonoBehaviour:
     \       EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n
     \       PUSH, __0_intnl_VRCSDKBaseVRCPlayerApi\r\n        PUSH, __0_const_intnl_VRCSDKBaseVRCPlayerApi\r\n
     \       PUSH, __0_intnl_SystemBoolean\r\n        EXTERN, \"SystemObject.__op_Equality__SystemObject_SystemObject__SystemBoolean\"\r\n
-    \       PUSH, __0_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000094\r\n
-    \       \r\n         # {\r\n        \r\n         # Debug.Log($\"PlayerStopper:
-    LocalPlayer is null. in editor?\");\r\n        PUSH, __0_const_intnl_SystemString\r\n
-    \       PUSH, __0_intnl_interpolatedStr_String\r\n        COPY\r\n        PUSH,
-    __0_intnl_interpolatedStr_String\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n
-    \       \r\n         # isLocalPlayer = false;\r\n        PUSH, __0_const_intnl_SystemBoolean\r\n
-    \       PUSH, isLocalPlayer\r\n        COPY\r\n        \r\n         # return;\r\n
-    \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n         #
-    Refresh();\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n        PUSH, __0_intnl_oldReturnLoc_UInt32\r\n
-    \       COPY\r\n        PUSH, __0_const_intnl_exitJumpLoc_UInt32\r\n        PUSH,
-    __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        JUMP, 0x000003B4\r\n
+    \       PUSH, __0_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000070\r\n
+    \       \r\n         # {\r\n        \r\n         # isLocalPlayer = false;\r\n
+    \       PUSH, __0_const_intnl_SystemBoolean\r\n        PUSH, isLocalPlayer\r\n
+    \       COPY\r\n        \r\n         # return;\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n
+    \       \r\n         # Refresh();\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       PUSH, __0_intnl_oldReturnLoc_UInt32\r\n        COPY\r\n        PUSH, __0_const_intnl_exitJumpLoc_UInt32\r\n
+    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        JUMP, 0x00000398\r\n
     \       PUSH, __0_intnl_oldReturnLoc_UInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
     \       COPY\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n
     \       \r\n         # private void Update()\r\n    .export _update\r\n        \r\n
@@ -83,31 +77,32 @@ MonoBehaviour:
     __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        \r\n         # {\r\n
     \       \r\n         # if (isLocalPlayer && enableTeleport)\r\n        PUSH, isLocalPlayer\r\n
     \       PUSH, __1_intnl_SystemBoolean\r\n        COPY\r\n        PUSH, __1_intnl_SystemBoolean\r\n
-    \       JUMP_IF_FALSE, 0x0000014C\r\n        PUSH, __1_intnl_SystemBoolean\r\n
+    \       JUMP_IF_FALSE, 0x00000128\r\n        PUSH, __1_intnl_SystemBoolean\r\n
     \       PUSH, enableTeleport\r\n        PUSH, __2_intnl_SystemBoolean\r\n        EXTERN,
     \"SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean\"\r\n
     \       PUSH, __2_intnl_SystemBoolean\r\n        PUSH, __1_intnl_SystemBoolean\r\n
     \       COPY\r\n        PUSH, __1_intnl_SystemBoolean\r\n        JUMP_IF_FALSE,
-    0x000001C4\r\n        \r\n         # {\r\n        \r\n         # Networking.LocalPlayer.TeleportTo(\r\n
+    0x000001A8\r\n        \r\n         # {\r\n        \r\n         # Networking.LocalPlayer.TeleportTo(\r\n
     \       \r\n         # spawnPos.position,\r\n        PUSH, spawnPos\r\n        PUSH,
     __0_intnl_UnityEngineVector3\r\n        EXTERN, \"UnityEngineTransform.__get_position__UnityEngineVector3\"\r\n
     \       \r\n         # spawnPos.rotation,\r\n        PUSH, spawnPos\r\n        PUSH,
     __0_intnl_UnityEngineQuaternion\r\n        EXTERN, \"UnityEngineTransform.__get_rotation__UnityEngineQuaternion\"\r\n
-    \       \r\n         # VRC_SceneDescriptor.SpawnOrientation.AlignRoomWithSpawnPoint);\r\n
-    \       PUSH, __1_intnl_VRCSDKBaseVRCPlayerApi\r\n        EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n
+    \       \r\n         # VRC_SceneDescriptor.SpawnOrientation.AlignRoomWithSpawnPoint,\r\n
+    \       \r\n         # false);\r\n        PUSH, __1_intnl_VRCSDKBaseVRCPlayerApi\r\n
+    \       EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n
     \       PUSH, __1_intnl_VRCSDKBaseVRCPlayerApi\r\n        PUSH, __0_intnl_UnityEngineVector3\r\n
     \       PUSH, __0_intnl_UnityEngineQuaternion\r\n        PUSH, __0_const_intnl_VRCSDKBaseVRC_SceneDescriptorSpawnOrientation\r\n
-    \       EXTERN, \"VRCSDKBaseVRCPlayerApi.__TeleportTo__UnityEngineVector3_UnityEngineQuaternion_VRCSDKBaseVRC_SceneDescriptorSpawnOrientation__SystemVoid\"\r\n
+    \       PUSH, __0_const_intnl_SystemBoolean\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__TeleportTo__UnityEngineVector3_UnityEngineQuaternion_VRCSDKBaseVRC_SceneDescriptorSpawnOrientation_SystemBoolean__SystemVoid\"\r\n
     \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n
     \        # public override void Interact()\r\n    .export _interact\r\n        \r\n
     \   _interact:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH,
     __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        \r\n         # {\r\n
     \       \r\n         # SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.Owner,
     \"Toggle\");\r\n        PUSH, __0_this_intnl_PlayerStopper\r\n        PUSH, __0_const_intnl_VRCUdonCommonInterfacesNetworkEventTarget\r\n
-    \       PUSH, __1_const_intnl_SystemString\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid\"\r\n
+    \       PUSH, __0_const_intnl_SystemString\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid\"\r\n
     \       \r\n         # Refresh();\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
     \       PUSH, __1_intnl_oldReturnLoc_UInt32\r\n        COPY\r\n        PUSH, __1_const_intnl_exitJumpLoc_UInt32\r\n
-    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        JUMP, 0x000003B4\r\n
+    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        JUMP, 0x00000398\r\n
     \       PUSH, __1_intnl_oldReturnLoc_UInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
     \       COPY\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n
     \       \r\n         # public void Toggle()\r\n    .export Toggle\r\n        \r\n
@@ -117,30 +112,30 @@ MonoBehaviour:
     \       PUSH, __3_intnl_SystemBoolean\r\n        EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n
     \       PUSH, __3_intnl_SystemBoolean\r\n        PUSH, enableTeleport\r\n        COPY\r\n
     \       \r\n         # Debug.Log($\"PlayerStopper: Toggled for {displayName},
-    currently {enableTeleport}!\");\r\n        PUSH, __2_const_intnl_SystemString\r\n
-    \       PUSH, __1_intnl_interpolatedStr_String\r\n        COPY\r\n        PUSH,
-    __1_intnl_interpolatedStr_String\r\n        PUSH, displayName\r\n        PUSH,
+    currently {enableTeleport}!\");\r\n        PUSH, __1_const_intnl_SystemString\r\n
+    \       PUSH, __0_intnl_interpolatedStr_String\r\n        COPY\r\n        PUSH,
+    __0_intnl_interpolatedStr_String\r\n        PUSH, displayName\r\n        PUSH,
     __0_intnl_SystemString\r\n        EXTERN, \"SystemString.__op_Addition__SystemString_SystemString__SystemString\"\r\n
-    \       PUSH, __0_intnl_SystemString\r\n        PUSH, __1_intnl_interpolatedStr_String\r\n
-    \       COPY\r\n        PUSH, __1_intnl_interpolatedStr_String\r\n        PUSH,
-    __3_const_intnl_SystemString\r\n        PUSH, __1_intnl_SystemString\r\n        EXTERN,
+    \       PUSH, __0_intnl_SystemString\r\n        PUSH, __0_intnl_interpolatedStr_String\r\n
+    \       COPY\r\n        PUSH, __0_intnl_interpolatedStr_String\r\n        PUSH,
+    __2_const_intnl_SystemString\r\n        PUSH, __1_intnl_SystemString\r\n        EXTERN,
     \"SystemString.__op_Addition__SystemString_SystemString__SystemString\"\r\n        PUSH,
-    __1_intnl_SystemString\r\n        PUSH, __1_intnl_interpolatedStr_String\r\n        COPY\r\n
+    __1_intnl_SystemString\r\n        PUSH, __0_intnl_interpolatedStr_String\r\n        COPY\r\n
     \       PUSH, enableTeleport\r\n        PUSH, __2_intnl_SystemString\r\n        EXTERN,
-    \"SystemBoolean.__ToString__SystemString\"\r\n        PUSH, __1_intnl_interpolatedStr_String\r\n
+    \"SystemBoolean.__ToString__SystemString\"\r\n        PUSH, __0_intnl_interpolatedStr_String\r\n
     \       PUSH, __2_intnl_SystemString\r\n        PUSH, __3_intnl_SystemString\r\n
     \       EXTERN, \"SystemString.__op_Addition__SystemString_SystemString__SystemString\"\r\n
-    \       PUSH, __3_intnl_SystemString\r\n        PUSH, __1_intnl_interpolatedStr_String\r\n
-    \       COPY\r\n        PUSH, __1_intnl_interpolatedStr_String\r\n        PUSH,
-    __4_const_intnl_SystemString\r\n        PUSH, __4_intnl_SystemString\r\n        EXTERN,
+    \       PUSH, __3_intnl_SystemString\r\n        PUSH, __0_intnl_interpolatedStr_String\r\n
+    \       COPY\r\n        PUSH, __0_intnl_interpolatedStr_String\r\n        PUSH,
+    __3_const_intnl_SystemString\r\n        PUSH, __4_intnl_SystemString\r\n        EXTERN,
     \"SystemString.__op_Addition__SystemString_SystemString__SystemString\"\r\n        PUSH,
-    __4_intnl_SystemString\r\n        PUSH, __1_intnl_interpolatedStr_String\r\n        COPY\r\n
-    \       PUSH, __1_intnl_interpolatedStr_String\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n
+    __4_intnl_SystemString\r\n        PUSH, __0_intnl_interpolatedStr_String\r\n        COPY\r\n
+    \       PUSH, __0_intnl_interpolatedStr_String\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n
     \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n
     \        # public void Refresh()\r\n    .export Refresh\r\n        \r\n    Refresh:\r\n
     \       \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
     \       COPY\r\n        \r\n         # {\r\n        \r\n         # if (useInputField)\r\n
-    \       PUSH, useInputField\r\n        JUMP_IF_FALSE, 0x000003F0\r\n        \r\n
+    \       PUSH, useInputField\r\n        JUMP_IF_FALSE, 0x000003D4\r\n        \r\n
     \        # {\r\n        \r\n         # displayName = inputField.text;\r\n        PUSH,
     inputField\r\n        PUSH, __5_intnl_SystemString\r\n        EXTERN, \"UnityEngineUIInputField.__get_text__SystemString\"\r\n
     \       PUSH, __5_intnl_SystemString\r\n        PUSH, displayName\r\n        COPY\r\n
@@ -154,24 +149,24 @@ MonoBehaviour:
     \       PUSH, __8_intnl_SystemString\r\n        EXTERN, \"SystemString.__ToLower__SystemString\"\r\n
     \       PUSH, __7_intnl_SystemString\r\n        PUSH, __8_intnl_SystemString\r\n
     \       PUSH, __4_intnl_SystemBoolean\r\n        EXTERN, \"SystemString.__op_Equality__SystemString_SystemString__SystemBoolean\"\r\n
-    \       PUSH, __4_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000500\r\n
+    \       PUSH, __4_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x000004E4\r\n
     \       \r\n         # {\r\n        \r\n         # Debug.Log($\"PlayerStopper:
-    LocalPlayer is {displayName}\");\r\n        PUSH, __5_const_intnl_SystemString\r\n
-    \       PUSH, __2_intnl_interpolatedStr_String\r\n        COPY\r\n        PUSH,
-    __2_intnl_interpolatedStr_String\r\n        PUSH, displayName\r\n        PUSH,
+    LocalPlayer is {displayName}\");\r\n        PUSH, __4_const_intnl_SystemString\r\n
+    \       PUSH, __1_intnl_interpolatedStr_String\r\n        COPY\r\n        PUSH,
+    __1_intnl_interpolatedStr_String\r\n        PUSH, displayName\r\n        PUSH,
     __9_intnl_SystemString\r\n        EXTERN, \"SystemString.__op_Addition__SystemString_SystemString__SystemString\"\r\n
-    \       PUSH, __9_intnl_SystemString\r\n        PUSH, __2_intnl_interpolatedStr_String\r\n
-    \       COPY\r\n        PUSH, __2_intnl_interpolatedStr_String\r\n        EXTERN,
+    \       PUSH, __9_intnl_SystemString\r\n        PUSH, __1_intnl_interpolatedStr_String\r\n
+    \       COPY\r\n        PUSH, __1_intnl_interpolatedStr_String\r\n        EXTERN,
     \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n        \r\n         #
     isLocalPlayer = true;\r\n        PUSH, __1_const_intnl_SystemBoolean\r\n        PUSH,
-    isLocalPlayer\r\n        COPY\r\n        JUMP, 0x0000056C\r\n        \r\n         #
+    isLocalPlayer\r\n        COPY\r\n        JUMP, 0x00000550\r\n        \r\n         #
     else\r\n        \r\n         # {\r\n        \r\n         # Debug.Log($\"PlayerStopper:
-    LocalPlayer is NOT {displayName}\");\r\n        PUSH, __6_const_intnl_SystemString\r\n
-    \       PUSH, __2_intnl_interpolatedStr_String\r\n        COPY\r\n        PUSH,
-    __2_intnl_interpolatedStr_String\r\n        PUSH, displayName\r\n        PUSH,
+    LocalPlayer is NOT {displayName}\");\r\n        PUSH, __5_const_intnl_SystemString\r\n
+    \       PUSH, __1_intnl_interpolatedStr_String\r\n        COPY\r\n        PUSH,
+    __1_intnl_interpolatedStr_String\r\n        PUSH, displayName\r\n        PUSH,
     __9_intnl_SystemString\r\n        EXTERN, \"SystemString.__op_Addition__SystemString_SystemString__SystemString\"\r\n
-    \       PUSH, __9_intnl_SystemString\r\n        PUSH, __2_intnl_interpolatedStr_String\r\n
-    \       COPY\r\n        PUSH, __2_intnl_interpolatedStr_String\r\n        EXTERN,
+    \       PUSH, __9_intnl_SystemString\r\n        PUSH, __1_intnl_interpolatedStr_String\r\n
+    \       COPY\r\n        PUSH, __1_intnl_interpolatedStr_String\r\n        EXTERN,
     \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n        \r\n         #
     isLocalPlayer = false;\r\n        PUSH, __0_const_intnl_SystemBoolean\r\n        PUSH,
     isLocalPlayer\r\n        COPY\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n
@@ -522,770 +517,749 @@ MonoBehaviour:
     - startInstruction: 84
       endInstruction: 83
       startSourceChar: 507
-      endSourceChar: 517
+      endSourceChar: 523
       line: 21
-      lineChar: 12
-      spanCodeSection: Debug.Log(
-    - startInstruction: 84
-      endInstruction: 83
-      startSourceChar: 517
-      endSourceChar: 519
-      line: 21
-      lineChar: 22
-      spanCodeSection: $"
-    - startInstruction: 84
-      endInstruction: 119
-      startSourceChar: 519
-      endSourceChar: 582
-      line: 21
-      lineChar: 24
-      spanCodeSection: "PlayerStopper: LocalPlayer is null. in editor?\");\r\n            "
-    - startInstruction: 120
-      endInstruction: 119
-      startSourceChar: 582
-      endSourceChar: 582
-      line: 22
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 120
-      endInstruction: 119
-      startSourceChar: 582
-      endSourceChar: 598
-      line: 22
       lineChar: 12
       spanCodeSection: 'isLocalPlayer = '
-    - startInstruction: 120
-      endInstruction: 139
-      startSourceChar: 598
-      endSourceChar: 618
-      line: 22
+    - startInstruction: 84
+      endInstruction: 103
+      startSourceChar: 523
+      endSourceChar: 543
+      line: 21
       lineChar: 28
       spanCodeSection: "false;\r\n            "
-    - startInstruction: 140
-      endInstruction: 147
-      startSourceChar: 618
-      endSourceChar: 648
-      line: 23
+    - startInstruction: 104
+      endInstruction: 111
+      startSourceChar: 543
+      endSourceChar: 573
+      line: 22
       lineChar: 12
       spanCodeSection: "return;\r\n        }\r\n\r\n        "
-    - startInstruction: 148
-      endInstruction: 147
-      startSourceChar: 648
-      endSourceChar: 648
-      line: 26
+    - startInstruction: 112
+      endInstruction: 111
+      startSourceChar: 573
+      endSourceChar: 573
+      line: 25
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 148
-      endInstruction: 147
-      startSourceChar: 648
-      endSourceChar: 648
-      line: 26
+    - startInstruction: 112
+      endInstruction: 111
+      startSourceChar: 573
+      endSourceChar: 573
+      line: 25
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 148
-      endInstruction: 223
-      startSourceChar: 648
-      endSourceChar: 673
-      line: 26
+    - startInstruction: 112
+      endInstruction: 187
+      startSourceChar: 573
+      endSourceChar: 598
+      line: 25
       lineChar: 8
       spanCodeSection: "Refresh();\r\n    }\r\n\r\n    "
-    - startInstruction: 224
-      endInstruction: 243
-      startSourceChar: 673
-      endSourceChar: 700
-      line: 29
+    - startInstruction: 188
+      endInstruction: 207
+      startSourceChar: 598
+      endSourceChar: 625
+      line: 28
       lineChar: 4
       spanCodeSection: "private void Update()\r\n    "
-    - startInstruction: 244
-      endInstruction: 243
-      startSourceChar: 700
-      endSourceChar: 711
-      line: 30
+    - startInstruction: 208
+      endInstruction: 207
+      startSourceChar: 625
+      endSourceChar: 636
+      line: 29
       lineChar: 4
       spanCodeSection: "{\r\n        "
-    - startInstruction: 244
-      endInstruction: 243
-      startSourceChar: 711
-      endSourceChar: 715
-      line: 31
+    - startInstruction: 208
+      endInstruction: 207
+      startSourceChar: 636
+      endSourceChar: 640
+      line: 30
       lineChar: 8
       spanCodeSection: if (
-    - startInstruction: 244
-      endInstruction: 243
-      startSourceChar: 715
-      endSourceChar: 715
-      line: 31
+    - startInstruction: 208
+      endInstruction: 207
+      startSourceChar: 640
+      endSourceChar: 640
+      line: 30
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 244
-      endInstruction: 279
-      startSourceChar: 715
-      endSourceChar: 732
-      line: 31
+    - startInstruction: 208
+      endInstruction: 243
+      startSourceChar: 640
+      endSourceChar: 657
+      line: 30
       lineChar: 12
       spanCodeSection: 'isLocalPlayer && '
-    - startInstruction: 280
-      endInstruction: 347
-      startSourceChar: 732
-      endSourceChar: 757
-      line: 31
+    - startInstruction: 244
+      endInstruction: 311
+      startSourceChar: 657
+      endSourceChar: 682
+      line: 30
       lineChar: 29
       spanCodeSection: "enableTeleport)\r\n        "
-    - startInstruction: 348
-      endInstruction: 347
-      startSourceChar: 757
-      endSourceChar: 772
-      line: 32
+    - startInstruction: 312
+      endInstruction: 311
+      startSourceChar: 682
+      endSourceChar: 697
+      line: 31
       lineChar: 8
       spanCodeSection: "{\r\n            "
-    - startInstruction: 348
-      endInstruction: 347
-      startSourceChar: 772
-      endSourceChar: 772
-      line: 33
+    - startInstruction: 312
+      endInstruction: 311
+      startSourceChar: 697
+      endSourceChar: 697
+      line: 32
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 348
-      endInstruction: 347
-      startSourceChar: 772
-      endSourceChar: 824
-      line: 33
+    - startInstruction: 312
+      endInstruction: 311
+      startSourceChar: 697
+      endSourceChar: 749
+      line: 32
       lineChar: 12
       spanCodeSection: "Networking.LocalPlayer.TeleportTo(\r\n                "
-    - startInstruction: 348
-      endInstruction: 347
-      startSourceChar: 824
-      endSourceChar: 824
-      line: 34
+    - startInstruction: 312
+      endInstruction: 311
+      startSourceChar: 749
+      endSourceChar: 749
+      line: 33
       lineChar: 16
       spanCodeSection: 
-    - startInstruction: 348
-      endInstruction: 347
-      startSourceChar: 824
-      endSourceChar: 833
-      line: 34
+    - startInstruction: 312
+      endInstruction: 311
+      startSourceChar: 749
+      endSourceChar: 758
+      line: 33
       lineChar: 16
       spanCodeSection: spawnPos.
-    - startInstruction: 348
-      endInstruction: 371
-      startSourceChar: 833
-      endSourceChar: 860
-      line: 34
+    - startInstruction: 312
+      endInstruction: 335
+      startSourceChar: 758
+      endSourceChar: 785
+      line: 33
       lineChar: 25
       spanCodeSection: "position,\r\n                "
-    - startInstruction: 372
-      endInstruction: 371
-      startSourceChar: 860
-      endSourceChar: 860
-      line: 35
+    - startInstruction: 336
+      endInstruction: 335
+      startSourceChar: 785
+      endSourceChar: 785
+      line: 34
       lineChar: 16
       spanCodeSection: 
-    - startInstruction: 372
-      endInstruction: 371
-      startSourceChar: 860
-      endSourceChar: 869
-      line: 35
+    - startInstruction: 336
+      endInstruction: 335
+      startSourceChar: 785
+      endSourceChar: 794
+      line: 34
       lineChar: 16
       spanCodeSection: spawnPos.
-    - startInstruction: 372
-      endInstruction: 395
-      startSourceChar: 869
-      endSourceChar: 896
-      line: 35
+    - startInstruction: 336
+      endInstruction: 359
+      startSourceChar: 794
+      endSourceChar: 821
+      line: 34
       lineChar: 25
       spanCodeSection: "rotation,\r\n                "
-    - startInstruction: 396
-      endInstruction: 395
-      startSourceChar: 896
-      endSourceChar: 896
-      line: 36
+    - startInstruction: 360
+      endInstruction: 359
+      startSourceChar: 821
+      endSourceChar: 821
+      line: 35
       lineChar: 16
       spanCodeSection: 
-    - startInstruction: 396
-      endInstruction: 395
-      startSourceChar: 896
-      endSourceChar: 896
-      line: 36
+    - startInstruction: 360
+      endInstruction: 359
+      startSourceChar: 821
+      endSourceChar: 821
+      line: 35
       lineChar: 16
       spanCodeSection: 
-    - startInstruction: 396
-      endInstruction: 395
-      startSourceChar: 896
-      endSourceChar: 916
-      line: 36
+    - startInstruction: 360
+      endInstruction: 359
+      startSourceChar: 821
+      endSourceChar: 841
+      line: 35
       lineChar: 16
       spanCodeSection: VRC_SceneDescriptor.
-    - startInstruction: 396
-      endInstruction: 395
-      startSourceChar: 916
-      endSourceChar: 933
-      line: 36
+    - startInstruction: 360
+      endInstruction: 359
+      startSourceChar: 841
+      endSourceChar: 858
+      line: 35
       lineChar: 36
       spanCodeSection: SpawnOrientation.
-    - startInstruction: 396
-      endInstruction: 459
-      startSourceChar: 933
-      endSourceChar: 984
-      line: 36
+    - startInstruction: 360
+      endInstruction: 359
+      startSourceChar: 858
+      endSourceChar: 900
+      line: 35
       lineChar: 53
-      spanCodeSection: "AlignRoomWithSpawnPoint);\r\n        }\r\n    }\r\n\r\n    "
-    - startInstruction: 460
-      endInstruction: 479
-      startSourceChar: 984
-      endSourceChar: 1021
+      spanCodeSection: "AlignRoomWithSpawnPoint,\r\n                "
+    - startInstruction: 360
+      endInstruction: 431
+      startSourceChar: 900
+      endSourceChar: 933
+      line: 36
+      lineChar: 16
+      spanCodeSection: "false);\r\n        }\r\n    }\r\n\r\n    "
+    - startInstruction: 432
+      endInstruction: 451
+      startSourceChar: 933
+      endSourceChar: 970
       line: 40
       lineChar: 4
       spanCodeSection: "public override void Interact()\r\n    "
-    - startInstruction: 480
-      endInstruction: 479
-      startSourceChar: 1021
-      endSourceChar: 1032
+    - startInstruction: 452
+      endInstruction: 451
+      startSourceChar: 970
+      endSourceChar: 981
       line: 41
       lineChar: 4
       spanCodeSection: "{\r\n        "
-    - startInstruction: 480
-      endInstruction: 479
-      startSourceChar: 1032
-      endSourceChar: 1032
+    - startInstruction: 452
+      endInstruction: 451
+      startSourceChar: 981
+      endSourceChar: 981
       line: 42
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 480
-      endInstruction: 479
-      startSourceChar: 1032
-      endSourceChar: 1055
+    - startInstruction: 452
+      endInstruction: 451
+      startSourceChar: 981
+      endSourceChar: 1004
       line: 42
       lineChar: 8
       spanCodeSection: SendCustomNetworkEvent(
-    - startInstruction: 480
-      endInstruction: 479
-      startSourceChar: 1055
-      endSourceChar: 1055
+    - startInstruction: 452
+      endInstruction: 451
+      startSourceChar: 1004
+      endSourceChar: 1004
       line: 42
       lineChar: 31
       spanCodeSection: 
-    - startInstruction: 480
-      endInstruction: 479
-      startSourceChar: 1055
-      endSourceChar: 1055
+    - startInstruction: 452
+      endInstruction: 451
+      startSourceChar: 1004
+      endSourceChar: 1004
       line: 42
       lineChar: 31
       spanCodeSection: 
-    - startInstruction: 480
-      endInstruction: 479
-      startSourceChar: 1055
-      endSourceChar: 1055
+    - startInstruction: 452
+      endInstruction: 451
+      startSourceChar: 1004
+      endSourceChar: 1004
       line: 42
       lineChar: 31
       spanCodeSection: 
-    - startInstruction: 480
-      endInstruction: 479
-      startSourceChar: 1055
-      endSourceChar: 1055
+    - startInstruction: 452
+      endInstruction: 451
+      startSourceChar: 1004
+      endSourceChar: 1004
       line: 42
       lineChar: 31
       spanCodeSection: 
-    - startInstruction: 480
-      endInstruction: 479
-      startSourceChar: 1055
-      endSourceChar: 1055
+    - startInstruction: 452
+      endInstruction: 451
+      startSourceChar: 1004
+      endSourceChar: 1004
       line: 42
       lineChar: 31
       spanCodeSection: 
-    - startInstruction: 480
-      endInstruction: 479
-      startSourceChar: 1055
-      endSourceChar: 1059
+    - startInstruction: 452
+      endInstruction: 451
+      startSourceChar: 1004
+      endSourceChar: 1008
       line: 42
       lineChar: 31
       spanCodeSection: VRC.
-    - startInstruction: 480
-      endInstruction: 479
-      startSourceChar: 1059
-      endSourceChar: 1064
+    - startInstruction: 452
+      endInstruction: 451
+      startSourceChar: 1008
+      endSourceChar: 1013
       line: 42
       lineChar: 35
       spanCodeSection: Udon.
-    - startInstruction: 480
-      endInstruction: 479
-      startSourceChar: 1064
-      endSourceChar: 1071
+    - startInstruction: 452
+      endInstruction: 451
+      startSourceChar: 1013
+      endSourceChar: 1020
       line: 42
       lineChar: 40
       spanCodeSection: Common.
-    - startInstruction: 480
-      endInstruction: 479
-      startSourceChar: 1071
-      endSourceChar: 1082
+    - startInstruction: 452
+      endInstruction: 451
+      startSourceChar: 1020
+      endSourceChar: 1031
       line: 42
       lineChar: 47
       spanCodeSection: Interfaces.
-    - startInstruction: 480
-      endInstruction: 479
-      startSourceChar: 1082
-      endSourceChar: 1101
+    - startInstruction: 452
+      endInstruction: 451
+      startSourceChar: 1031
+      endSourceChar: 1050
       line: 42
       lineChar: 58
       spanCodeSection: NetworkEventTarget.
-    - startInstruction: 480
-      endInstruction: 479
-      startSourceChar: 1101
-      endSourceChar: 1108
+    - startInstruction: 452
+      endInstruction: 451
+      startSourceChar: 1050
+      endSourceChar: 1057
       line: 42
       lineChar: 77
       spanCodeSection: 'Owner, '
-    - startInstruction: 480
-      endInstruction: 511
-      startSourceChar: 1108
-      endSourceChar: 1128
+    - startInstruction: 452
+      endInstruction: 483
+      startSourceChar: 1057
+      endSourceChar: 1077
       line: 42
       lineChar: 84
       spanCodeSection: "\"Toggle\");\r\n        "
-    - startInstruction: 512
-      endInstruction: 511
-      startSourceChar: 1128
-      endSourceChar: 1128
+    - startInstruction: 484
+      endInstruction: 483
+      startSourceChar: 1077
+      endSourceChar: 1077
       line: 43
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 512
-      endInstruction: 511
-      startSourceChar: 1128
-      endSourceChar: 1128
+    - startInstruction: 484
+      endInstruction: 483
+      startSourceChar: 1077
+      endSourceChar: 1077
       line: 43
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 512
-      endInstruction: 587
-      startSourceChar: 1128
-      endSourceChar: 1153
+    - startInstruction: 484
+      endInstruction: 559
+      startSourceChar: 1077
+      endSourceChar: 1102
       line: 43
       lineChar: 8
       spanCodeSection: "Refresh();\r\n    }\r\n\r\n    "
-    - startInstruction: 588
-      endInstruction: 607
-      startSourceChar: 1153
-      endSourceChar: 1179
+    - startInstruction: 560
+      endInstruction: 579
+      startSourceChar: 1102
+      endSourceChar: 1128
       line: 46
       lineChar: 4
       spanCodeSection: "public void Toggle()\r\n    "
-    - startInstruction: 608
-      endInstruction: 607
-      startSourceChar: 1179
-      endSourceChar: 1190
+    - startInstruction: 580
+      endInstruction: 579
+      startSourceChar: 1128
+      endSourceChar: 1139
       line: 47
       lineChar: 4
       spanCodeSection: "{\r\n        "
-    - startInstruction: 608
-      endInstruction: 607
-      startSourceChar: 1190
-      endSourceChar: 1190
+    - startInstruction: 580
+      endInstruction: 579
+      startSourceChar: 1139
+      endSourceChar: 1139
       line: 48
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 608
-      endInstruction: 607
-      startSourceChar: 1190
-      endSourceChar: 1207
+    - startInstruction: 580
+      endInstruction: 579
+      startSourceChar: 1139
+      endSourceChar: 1156
       line: 48
       lineChar: 8
       spanCodeSection: 'enableTeleport = '
-    - startInstruction: 608
-      endInstruction: 607
-      startSourceChar: 1207
-      endSourceChar: 1208
+    - startInstruction: 580
+      endInstruction: 579
+      startSourceChar: 1156
+      endSourceChar: 1157
       line: 48
       lineChar: 25
       spanCodeSection: '!'
-    - startInstruction: 608
-      endInstruction: 651
-      startSourceChar: 1208
-      endSourceChar: 1233
+    - startInstruction: 580
+      endInstruction: 623
+      startSourceChar: 1157
+      endSourceChar: 1182
       line: 48
       lineChar: 26
       spanCodeSection: "enableTeleport;\r\n        "
-    - startInstruction: 652
-      endInstruction: 651
-      startSourceChar: 1233
-      endSourceChar: 1233
+    - startInstruction: 624
+      endInstruction: 623
+      startSourceChar: 1182
+      endSourceChar: 1182
       line: 49
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 652
-      endInstruction: 651
-      startSourceChar: 1233
-      endSourceChar: 1243
+    - startInstruction: 624
+      endInstruction: 623
+      startSourceChar: 1182
+      endSourceChar: 1192
       line: 49
       lineChar: 8
       spanCodeSection: Debug.Log(
-    - startInstruction: 652
-      endInstruction: 651
-      startSourceChar: 1243
-      endSourceChar: 1245
+    - startInstruction: 624
+      endInstruction: 623
+      startSourceChar: 1192
+      endSourceChar: 1194
       line: 49
       lineChar: 18
       spanCodeSection: $"
-    - startInstruction: 652
-      endInstruction: 671
-      startSourceChar: 1245
-      endSourceChar: 1272
+    - startInstruction: 624
+      endInstruction: 643
+      startSourceChar: 1194
+      endSourceChar: 1221
       line: 49
       lineChar: 20
       spanCodeSection: 'PlayerStopper: Toggled for '
-    - startInstruction: 672
-      endInstruction: 671
-      startSourceChar: 1272
-      endSourceChar: 1273
+    - startInstruction: 644
+      endInstruction: 643
+      startSourceChar: 1221
+      endSourceChar: 1222
       line: 49
       lineChar: 47
       spanCodeSection: '{'
-    - startInstruction: 672
-      endInstruction: 723
-      startSourceChar: 1273
-      endSourceChar: 1285
+    - startInstruction: 644
+      endInstruction: 695
+      startSourceChar: 1222
+      endSourceChar: 1234
       line: 49
       lineChar: 48
       spanCodeSection: displayName}
-    - startInstruction: 724
-      endInstruction: 775
-      startSourceChar: 1285
-      endSourceChar: 1297
+    - startInstruction: 696
+      endInstruction: 747
+      startSourceChar: 1234
+      endSourceChar: 1246
       line: 49
       lineChar: 60
       spanCodeSection: ', currently '
-    - startInstruction: 776
-      endInstruction: 775
-      startSourceChar: 1297
-      endSourceChar: 1298
+    - startInstruction: 748
+      endInstruction: 747
+      startSourceChar: 1246
+      endSourceChar: 1247
       line: 49
       lineChar: 72
       spanCodeSection: '{'
-    - startInstruction: 776
-      endInstruction: 851
-      startSourceChar: 1298
-      endSourceChar: 1313
+    - startInstruction: 748
+      endInstruction: 823
+      startSourceChar: 1247
+      endSourceChar: 1262
       line: 49
       lineChar: 73
       spanCodeSection: enableTeleport}
-    - startInstruction: 852
-      endInstruction: 927
-      startSourceChar: 1313
-      endSourceChar: 1332
+    - startInstruction: 824
+      endInstruction: 899
+      startSourceChar: 1262
+      endSourceChar: 1281
       line: 49
       lineChar: 88
       spanCodeSection: "!\");\r\n    }\r\n\r\n    "
-    - startInstruction: 928
-      endInstruction: 947
-      startSourceChar: 1332
-      endSourceChar: 1359
+    - startInstruction: 900
+      endInstruction: 919
+      startSourceChar: 1281
+      endSourceChar: 1308
       line: 52
       lineChar: 4
       spanCodeSection: "public void Refresh()\r\n    "
-    - startInstruction: 948
-      endInstruction: 947
-      startSourceChar: 1359
-      endSourceChar: 1370
+    - startInstruction: 920
+      endInstruction: 919
+      startSourceChar: 1308
+      endSourceChar: 1319
       line: 53
       lineChar: 4
       spanCodeSection: "{\r\n        "
-    - startInstruction: 948
-      endInstruction: 947
-      startSourceChar: 1370
-      endSourceChar: 1374
+    - startInstruction: 920
+      endInstruction: 919
+      startSourceChar: 1319
+      endSourceChar: 1323
       line: 54
       lineChar: 8
       spanCodeSection: if (
-    - startInstruction: 948
-      endInstruction: 963
-      startSourceChar: 1374
-      endSourceChar: 1398
+    - startInstruction: 920
+      endInstruction: 935
+      startSourceChar: 1323
+      endSourceChar: 1347
       line: 54
       lineChar: 12
       spanCodeSection: "useInputField)\r\n        "
-    - startInstruction: 964
-      endInstruction: 963
-      startSourceChar: 1398
-      endSourceChar: 1413
+    - startInstruction: 936
+      endInstruction: 935
+      startSourceChar: 1347
+      endSourceChar: 1362
       line: 55
       lineChar: 8
       spanCodeSection: "{\r\n            "
-    - startInstruction: 964
-      endInstruction: 963
-      startSourceChar: 1413
-      endSourceChar: 1413
+    - startInstruction: 936
+      endInstruction: 935
+      startSourceChar: 1362
+      endSourceChar: 1362
       line: 56
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 964
-      endInstruction: 963
-      startSourceChar: 1413
-      endSourceChar: 1427
+    - startInstruction: 936
+      endInstruction: 935
+      startSourceChar: 1362
+      endSourceChar: 1376
       line: 56
       lineChar: 12
       spanCodeSection: 'displayName = '
-    - startInstruction: 964
-      endInstruction: 963
-      startSourceChar: 1427
-      endSourceChar: 1427
+    - startInstruction: 936
+      endInstruction: 935
+      startSourceChar: 1376
+      endSourceChar: 1376
       line: 56
       lineChar: 26
       spanCodeSection: 
-    - startInstruction: 964
-      endInstruction: 963
-      startSourceChar: 1427
-      endSourceChar: 1438
+    - startInstruction: 936
+      endInstruction: 935
+      startSourceChar: 1376
+      endSourceChar: 1387
       line: 56
       lineChar: 26
       spanCodeSection: inputField.
-    - startInstruction: 964
-      endInstruction: 1007
-      startSourceChar: 1438
-      endSourceChar: 1466
+    - startInstruction: 936
+      endInstruction: 979
+      startSourceChar: 1387
+      endSourceChar: 1415
       line: 56
       lineChar: 37
       spanCodeSection: "text;\r\n        }\r\n\r\n        "
-    - startInstruction: 1008
-      endInstruction: 1007
-      startSourceChar: 1466
-      endSourceChar: 1470
+    - startInstruction: 980
+      endInstruction: 979
+      startSourceChar: 1415
+      endSourceChar: 1419
       line: 59
       lineChar: 8
       spanCodeSection: if (
-    - startInstruction: 1008
-      endInstruction: 1007
-      startSourceChar: 1470
-      endSourceChar: 1470
+    - startInstruction: 980
+      endInstruction: 979
+      startSourceChar: 1419
+      endSourceChar: 1419
       line: 59
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1008
-      endInstruction: 1007
-      startSourceChar: 1470
-      endSourceChar: 1470
+    - startInstruction: 980
+      endInstruction: 979
+      startSourceChar: 1419
+      endSourceChar: 1419
       line: 59
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1008
-      endInstruction: 1007
-      startSourceChar: 1470
-      endSourceChar: 1470
+    - startInstruction: 980
+      endInstruction: 979
+      startSourceChar: 1419
+      endSourceChar: 1419
       line: 59
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1008
-      endInstruction: 1007
-      startSourceChar: 1470
-      endSourceChar: 1470
+    - startInstruction: 980
+      endInstruction: 979
+      startSourceChar: 1419
+      endSourceChar: 1419
       line: 59
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1008
-      endInstruction: 1007
-      startSourceChar: 1470
-      endSourceChar: 1470
+    - startInstruction: 980
+      endInstruction: 979
+      startSourceChar: 1419
+      endSourceChar: 1419
       line: 59
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1008
-      endInstruction: 1007
-      startSourceChar: 1470
-      endSourceChar: 1481
+    - startInstruction: 980
+      endInstruction: 979
+      startSourceChar: 1419
+      endSourceChar: 1430
       line: 59
       lineChar: 12
       spanCodeSection: Networking.
-    - startInstruction: 1008
-      endInstruction: 1007
-      startSourceChar: 1481
-      endSourceChar: 1493
+    - startInstruction: 980
+      endInstruction: 979
+      startSourceChar: 1430
+      endSourceChar: 1442
       line: 59
       lineChar: 23
       spanCodeSection: LocalPlayer.
-    - startInstruction: 1008
-      endInstruction: 1023
-      startSourceChar: 1493
-      endSourceChar: 1505
+    - startInstruction: 980
+      endInstruction: 995
+      startSourceChar: 1442
+      endSourceChar: 1454
       line: 59
       lineChar: 35
       spanCodeSection: displayName.
-    - startInstruction: 1024
-      endInstruction: 1091
-      startSourceChar: 1505
-      endSourceChar: 1518
+    - startInstruction: 996
+      endInstruction: 1063
+      startSourceChar: 1454
+      endSourceChar: 1467
       line: 59
       lineChar: 47
       spanCodeSection: 'ToLower() == '
-    - startInstruction: 1092
-      endInstruction: 1091
-      startSourceChar: 1518
-      endSourceChar: 1518
+    - startInstruction: 1064
+      endInstruction: 1063
+      startSourceChar: 1467
+      endSourceChar: 1467
       line: 59
       lineChar: 60
       spanCodeSection: 
-    - startInstruction: 1092
-      endInstruction: 1091
-      startSourceChar: 1518
-      endSourceChar: 1518
+    - startInstruction: 1064
+      endInstruction: 1063
+      startSourceChar: 1467
+      endSourceChar: 1467
       line: 59
       lineChar: 60
       spanCodeSection: 
-    - startInstruction: 1092
-      endInstruction: 1091
-      startSourceChar: 1518
-      endSourceChar: 1530
+    - startInstruction: 1064
+      endInstruction: 1063
+      startSourceChar: 1467
+      endSourceChar: 1479
       line: 59
       lineChar: 60
       spanCodeSection: displayName.
-    - startInstruction: 1092
-      endInstruction: 1163
-      startSourceChar: 1530
-      endSourceChar: 1550
+    - startInstruction: 1064
+      endInstruction: 1135
+      startSourceChar: 1479
+      endSourceChar: 1499
       line: 59
       lineChar: 72
       spanCodeSection: "ToLower())\r\n        "
-    - startInstruction: 1164
-      endInstruction: 1163
-      startSourceChar: 1550
-      endSourceChar: 1565
+    - startInstruction: 1136
+      endInstruction: 1135
+      startSourceChar: 1499
+      endSourceChar: 1514
       line: 60
       lineChar: 8
       spanCodeSection: "{\r\n            "
-    - startInstruction: 1164
-      endInstruction: 1163
-      startSourceChar: 1565
-      endSourceChar: 1565
+    - startInstruction: 1136
+      endInstruction: 1135
+      startSourceChar: 1514
+      endSourceChar: 1514
       line: 61
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1164
-      endInstruction: 1163
-      startSourceChar: 1565
-      endSourceChar: 1575
+    - startInstruction: 1136
+      endInstruction: 1135
+      startSourceChar: 1514
+      endSourceChar: 1524
       line: 61
       lineChar: 12
       spanCodeSection: Debug.Log(
-    - startInstruction: 1164
-      endInstruction: 1163
-      startSourceChar: 1575
-      endSourceChar: 1577
+    - startInstruction: 1136
+      endInstruction: 1135
+      startSourceChar: 1524
+      endSourceChar: 1526
       line: 61
       lineChar: 22
       spanCodeSection: $"
-    - startInstruction: 1164
-      endInstruction: 1183
-      startSourceChar: 1577
-      endSourceChar: 1607
+    - startInstruction: 1136
+      endInstruction: 1155
+      startSourceChar: 1526
+      endSourceChar: 1556
       line: 61
       lineChar: 24
       spanCodeSection: 'PlayerStopper: LocalPlayer is '
-    - startInstruction: 1184
-      endInstruction: 1183
-      startSourceChar: 1607
-      endSourceChar: 1608
+    - startInstruction: 1156
+      endInstruction: 1155
+      startSourceChar: 1556
+      endSourceChar: 1557
       line: 61
       lineChar: 54
       spanCodeSection: '{'
-    - startInstruction: 1184
-      endInstruction: 1251
-      startSourceChar: 1608
-      endSourceChar: 1637
+    - startInstruction: 1156
+      endInstruction: 1223
+      startSourceChar: 1557
+      endSourceChar: 1586
       line: 61
       lineChar: 55
       spanCodeSection: "displayName}\");\r\n            "
-    - startInstruction: 1252
-      endInstruction: 1251
-      startSourceChar: 1637
-      endSourceChar: 1637
+    - startInstruction: 1224
+      endInstruction: 1223
+      startSourceChar: 1586
+      endSourceChar: 1586
       line: 62
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1252
-      endInstruction: 1251
-      startSourceChar: 1637
-      endSourceChar: 1653
+    - startInstruction: 1224
+      endInstruction: 1223
+      startSourceChar: 1586
+      endSourceChar: 1602
       line: 62
       lineChar: 12
       spanCodeSection: 'isLocalPlayer = '
-    - startInstruction: 1252
-      endInstruction: 1279
-      startSourceChar: 1653
-      endSourceChar: 1679
+    - startInstruction: 1224
+      endInstruction: 1251
+      startSourceChar: 1602
+      endSourceChar: 1628
       line: 62
       lineChar: 28
       spanCodeSection: "true;\r\n        }\r\n        "
-    - startInstruction: 1280
-      endInstruction: 1279
-      startSourceChar: 1679
-      endSourceChar: 1693
+    - startInstruction: 1252
+      endInstruction: 1251
+      startSourceChar: 1628
+      endSourceChar: 1642
       line: 64
       lineChar: 8
       spanCodeSection: "else\r\n        "
-    - startInstruction: 1280
-      endInstruction: 1279
-      startSourceChar: 1693
-      endSourceChar: 1708
+    - startInstruction: 1252
+      endInstruction: 1251
+      startSourceChar: 1642
+      endSourceChar: 1657
       line: 65
       lineChar: 8
       spanCodeSection: "{\r\n            "
-    - startInstruction: 1280
-      endInstruction: 1279
-      startSourceChar: 1708
-      endSourceChar: 1708
+    - startInstruction: 1252
+      endInstruction: 1251
+      startSourceChar: 1657
+      endSourceChar: 1657
       line: 66
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1280
-      endInstruction: 1279
-      startSourceChar: 1708
-      endSourceChar: 1718
+    - startInstruction: 1252
+      endInstruction: 1251
+      startSourceChar: 1657
+      endSourceChar: 1667
       line: 66
       lineChar: 12
       spanCodeSection: Debug.Log(
-    - startInstruction: 1280
-      endInstruction: 1279
-      startSourceChar: 1718
-      endSourceChar: 1720
+    - startInstruction: 1252
+      endInstruction: 1251
+      startSourceChar: 1667
+      endSourceChar: 1669
       line: 66
       lineChar: 22
       spanCodeSection: $"
-    - startInstruction: 1280
-      endInstruction: 1299
-      startSourceChar: 1720
-      endSourceChar: 1754
+    - startInstruction: 1252
+      endInstruction: 1271
+      startSourceChar: 1669
+      endSourceChar: 1703
       line: 66
       lineChar: 24
       spanCodeSection: 'PlayerStopper: LocalPlayer is NOT '
-    - startInstruction: 1300
-      endInstruction: 1299
-      startSourceChar: 1754
-      endSourceChar: 1755
+    - startInstruction: 1272
+      endInstruction: 1271
+      startSourceChar: 1703
+      endSourceChar: 1704
       line: 66
       lineChar: 58
       spanCodeSection: '{'
-    - startInstruction: 1300
-      endInstruction: 1367
-      startSourceChar: 1755
-      endSourceChar: 1784
+    - startInstruction: 1272
+      endInstruction: 1339
+      startSourceChar: 1704
+      endSourceChar: 1733
       line: 66
       lineChar: 59
       spanCodeSection: "displayName}\");\r\n            "
-    - startInstruction: 1368
-      endInstruction: 1367
-      startSourceChar: 1784
-      endSourceChar: 1784
+    - startInstruction: 1340
+      endInstruction: 1339
+      startSourceChar: 1733
+      endSourceChar: 1733
       line: 67
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1368
-      endInstruction: 1367
-      startSourceChar: 1784
-      endSourceChar: 1800
+    - startInstruction: 1340
+      endInstruction: 1339
+      startSourceChar: 1733
+      endSourceChar: 1749
       line: 67
       lineChar: 12
       spanCodeSection: 'isLocalPlayer = '
-    - startInstruction: 1368
-      endInstruction: 1368
-      startSourceChar: 1800
-      endSourceChar: 1800
+    - startInstruction: 1340
+      endInstruction: 1340
+      startSourceChar: 1749
+      endSourceChar: 1749
       line: 67
       lineChar: 28
       spanCodeSection: 

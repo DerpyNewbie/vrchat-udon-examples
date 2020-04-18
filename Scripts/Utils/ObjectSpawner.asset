@@ -15,21 +15,35 @@ MonoBehaviour:
   serializedUdonProgramAsset: {fileID: 11400000, guid: 23036e0d8f607504c9c2e481a7496ee2,
     type: 2}
   udonAssembly: ".data_start\r\n\r\n    .export original\r\n    .export spawnPos\r\n
-    \   .export activateOnSpawn\r\n\r\n    __refl_const_intnl_udonTypeID: %SystemInt64,
-    null\r\n    __refl_const_intnl_udonTypeName: %SystemString, null\r\n    activateOnSpawn:
-    %SystemBoolean, null\r\n    original: %UnityEngineGameObject, null\r\n    spawnPos:
-    %UnityEngineTransform, null\r\n    __0_this_intnl_ObjectSpawner: %VRCUdonUdonBehaviour,
-    this\r\n    __0_spawnedObject_GameObject: %UnityEngineGameObject, null\r\n    __0_const_intnl_SystemUInt32:
-    %SystemUInt32, null\r\n    __0_intnl_UnityEngineGameObject: %UnityEngineGameObject,
-    null\r\n    __0_intnl_UnityEngineQuaternion: %UnityEngineQuaternion, null\r\n
-    \   __0_intnl_UnityEngineTransform: %UnityEngineTransform, null\r\n    __0_intnl_returnTarget_UInt32:
-    %SystemUInt32, null\r\n    __0_intnl_UnityEngineVector3: %UnityEngineVector3,
-    null\r\n\r\n.data_end\r\n\r\n        \r\n         # using UdonSharp;\r\n        \r\n
-    \        # using UnityEngine;\r\n        \r\n         # public class ObjectSpawner
-    : UdonSharpBehaviour\r\n.code_start\r\n        \r\n         # public GameObject
-    original = null;\r\n        \r\n         # public Transform spawnPos = null;\r\n
-    \       \r\n         # public bool activateOnSpawn = true;\r\n        \r\n         #
-    public override void Interact()\r\n    .export _interact\r\n        \r\n    _interact:\r\n
+    \   .export activateOnSpawn\r\n    .export spawnGlobally\r\n\r\n    __refl_const_intnl_udonTypeID:
+    %SystemInt64, null\r\n    __refl_const_intnl_udonTypeName: %SystemString, null\r\n
+    \   activateOnSpawn: %SystemBoolean, null\r\n    spawnGlobally: %SystemBoolean,
+    null\r\n    original: %UnityEngineGameObject, null\r\n    spawnPos: %UnityEngineTransform,
+    null\r\n    __0_this_intnl_ObjectSpawner: %VRCUdonUdonBehaviour, this\r\n    __0_spawnedObject_GameObject:
+    %UnityEngineGameObject, null\r\n    __0_const_intnl_VRCUdonCommonInterfacesNetworkEventTarget:
+    %VRCUdonCommonInterfacesNetworkEventTarget, null\r\n    __0_const_intnl_SystemString:
+    %SystemString, null\r\n    __0_const_intnl_SystemUInt32: %SystemUInt32, null\r\n
+    \   __0_intnl_UnityEngineGameObject: %UnityEngineGameObject, null\r\n    __0_intnl_UnityEngineQuaternion:
+    %UnityEngineQuaternion, null\r\n    __0_intnl_UnityEngineTransform: %UnityEngineTransform,
+    null\r\n    __0_intnl_returnTarget_UInt32: %SystemUInt32, null\r\n    __0_intnl_UnityEngineVector3:
+    %UnityEngineVector3, null\r\n\r\n.data_end\r\n\r\n        \r\n         # using
+    UdonSharp;\r\n        \r\n         # using UnityEngine;\r\n        \r\n         #
+    public class ObjectSpawner : UdonSharpBehaviour\r\n.code_start\r\n        \r\n
+    \        # public GameObject original = null;\r\n        \r\n         # public
+    Transform spawnPos = null;\r\n        \r\n         # public bool activateOnSpawn
+    = true;\r\n        \r\n         # public bool spawnGlobally = true;\r\n        \r\n
+    \        # public override void Interact()\r\n    .export _interact\r\n        \r\n
+    \   _interact:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH,
+    __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        \r\n         # {\r\n
+    \       \r\n         # if (spawnGlobally)\r\n        PUSH, spawnGlobally\r\n        JUMP_IF_FALSE,
+    0x0000004C\r\n        \r\n         # {\r\n        \r\n         # SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All,
+    \"Spawn\");\r\n        PUSH, __0_this_intnl_ObjectSpawner\r\n        PUSH, __0_const_intnl_VRCUdonCommonInterfacesNetworkEventTarget\r\n
+    \       PUSH, __0_const_intnl_SystemString\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid\"\r\n
+    \       JUMP, 0x00000064\r\n        \r\n         # else\r\n        \r\n         #
+    {\r\n        \r\n         # SendCustomEvent(\"Spawn\");\r\n        PUSH, __0_this_intnl_ObjectSpawner\r\n
+    \       PUSH, __0_const_intnl_SystemString\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
+    \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n
+    \        # public void Spawn()\r\n    .export Spawn\r\n        \r\n    Spawn:\r\n
     \       \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
     \       COPY\r\n        \r\n         # {\r\n        \r\n         # GameObject
     spawnedObject = VRCInstantiate(original);\r\n        PUSH, original\r\n        PUSH,
@@ -183,148 +197,337 @@ MonoBehaviour:
     - startInstruction: 0
       endInstruction: -1
       startSourceChar: 184
-      endSourceChar: 220
+      endSourceChar: 218
       line: 8
       lineChar: 11
-      spanCodeSection: "bool activateOnSpawn = true;\r\n\r\n    "
+      spanCodeSection: "bool activateOnSpawn = true;\r\n    "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 218
+      endSourceChar: 225
+      line: 9
+      lineChar: 4
+      spanCodeSection: 'public '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 225
+      endSourceChar: 225
+      line: 9
+      lineChar: 11
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 225
+      endSourceChar: 259
+      line: 9
+      lineChar: 11
+      spanCodeSection: "bool spawnGlobally = true;\r\n\r\n    "
     - startInstruction: 0
       endInstruction: 19
-      startSourceChar: 220
-      endSourceChar: 257
-      line: 10
+      startSourceChar: 259
+      endSourceChar: 296
+      line: 11
       lineChar: 4
       spanCodeSection: "public override void Interact()\r\n    "
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 257
-      endSourceChar: 268
-      line: 11
+      startSourceChar: 296
+      endSourceChar: 307
+      line: 12
       lineChar: 4
       spanCodeSection: "{\r\n        "
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 268
-      endSourceChar: 268
-      line: 12
+      startSourceChar: 307
+      endSourceChar: 311
+      line: 13
+      lineChar: 8
+      spanCodeSection: if (
+    - startInstruction: 20
+      endInstruction: 35
+      startSourceChar: 311
+      endSourceChar: 335
+      line: 13
+      lineChar: 12
+      spanCodeSection: "spawnGlobally)\r\n        "
+    - startInstruction: 36
+      endInstruction: 35
+      startSourceChar: 335
+      endSourceChar: 350
+      line: 14
+      lineChar: 8
+      spanCodeSection: "{\r\n            "
+    - startInstruction: 36
+      endInstruction: 35
+      startSourceChar: 350
+      endSourceChar: 350
+      line: 15
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 36
+      endInstruction: 35
+      startSourceChar: 350
+      endSourceChar: 373
+      line: 15
+      lineChar: 12
+      spanCodeSection: SendCustomNetworkEvent(
+    - startInstruction: 36
+      endInstruction: 35
+      startSourceChar: 373
+      endSourceChar: 373
+      line: 15
+      lineChar: 35
+      spanCodeSection: 
+    - startInstruction: 36
+      endInstruction: 35
+      startSourceChar: 373
+      endSourceChar: 373
+      line: 15
+      lineChar: 35
+      spanCodeSection: 
+    - startInstruction: 36
+      endInstruction: 35
+      startSourceChar: 373
+      endSourceChar: 373
+      line: 15
+      lineChar: 35
+      spanCodeSection: 
+    - startInstruction: 36
+      endInstruction: 35
+      startSourceChar: 373
+      endSourceChar: 373
+      line: 15
+      lineChar: 35
+      spanCodeSection: 
+    - startInstruction: 36
+      endInstruction: 35
+      startSourceChar: 373
+      endSourceChar: 373
+      line: 15
+      lineChar: 35
+      spanCodeSection: 
+    - startInstruction: 36
+      endInstruction: 35
+      startSourceChar: 373
+      endSourceChar: 377
+      line: 15
+      lineChar: 35
+      spanCodeSection: VRC.
+    - startInstruction: 36
+      endInstruction: 35
+      startSourceChar: 377
+      endSourceChar: 382
+      line: 15
+      lineChar: 39
+      spanCodeSection: Udon.
+    - startInstruction: 36
+      endInstruction: 35
+      startSourceChar: 382
+      endSourceChar: 389
+      line: 15
+      lineChar: 44
+      spanCodeSection: Common.
+    - startInstruction: 36
+      endInstruction: 35
+      startSourceChar: 389
+      endSourceChar: 400
+      line: 15
+      lineChar: 51
+      spanCodeSection: Interfaces.
+    - startInstruction: 36
+      endInstruction: 35
+      startSourceChar: 400
+      endSourceChar: 419
+      line: 15
+      lineChar: 62
+      spanCodeSection: NetworkEventTarget.
+    - startInstruction: 36
+      endInstruction: 35
+      startSourceChar: 419
+      endSourceChar: 424
+      line: 15
+      lineChar: 81
+      spanCodeSection: 'All, '
+    - startInstruction: 36
+      endInstruction: 75
+      startSourceChar: 424
+      endSourceChar: 454
+      line: 15
+      lineChar: 86
+      spanCodeSection: "\"Spawn\");\r\n        }\r\n        "
+    - startInstruction: 76
+      endInstruction: 75
+      startSourceChar: 454
+      endSourceChar: 468
+      line: 17
+      lineChar: 8
+      spanCodeSection: "else\r\n        "
+    - startInstruction: 76
+      endInstruction: 75
+      startSourceChar: 468
+      endSourceChar: 483
+      line: 18
+      lineChar: 8
+      spanCodeSection: "{\r\n            "
+    - startInstruction: 76
+      endInstruction: 75
+      startSourceChar: 483
+      endSourceChar: 483
+      line: 19
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 76
+      endInstruction: 75
+      startSourceChar: 483
+      endSourceChar: 499
+      line: 19
+      lineChar: 12
+      spanCodeSection: SendCustomEvent(
+    - startInstruction: 76
+      endInstruction: 107
+      startSourceChar: 499
+      endSourceChar: 534
+      line: 19
+      lineChar: 28
+      spanCodeSection: "\"Spawn\");\r\n        }\r\n    }\r\n\r\n    "
+    - startInstruction: 108
+      endInstruction: 127
+      startSourceChar: 534
+      endSourceChar: 559
+      line: 23
+      lineChar: 4
+      spanCodeSection: "public void Spawn()\r\n    "
+    - startInstruction: 128
+      endInstruction: 127
+      startSourceChar: 559
+      endSourceChar: 570
+      line: 24
+      lineChar: 4
+      spanCodeSection: "{\r\n        "
+    - startInstruction: 128
+      endInstruction: 127
+      startSourceChar: 570
+      endSourceChar: 570
+      line: 25
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 20
-      endInstruction: 19
-      startSourceChar: 268
-      endSourceChar: 268
-      line: 12
+    - startInstruction: 128
+      endInstruction: 127
+      startSourceChar: 570
+      endSourceChar: 570
+      line: 25
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 20
-      endInstruction: 19
-      startSourceChar: 268
-      endSourceChar: 268
-      line: 12
+    - startInstruction: 128
+      endInstruction: 127
+      startSourceChar: 570
+      endSourceChar: 570
+      line: 25
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 20
-      endInstruction: 19
-      startSourceChar: 268
-      endSourceChar: 293
-      line: 12
+    - startInstruction: 128
+      endInstruction: 127
+      startSourceChar: 570
+      endSourceChar: 595
+      line: 25
       lineChar: 8
       spanCodeSection: 'GameObject spawnedObject '
-    - startInstruction: 20
-      endInstruction: 19
-      startSourceChar: 293
-      endSourceChar: 295
-      line: 12
+    - startInstruction: 128
+      endInstruction: 127
+      startSourceChar: 595
+      endSourceChar: 597
+      line: 25
       lineChar: 33
       spanCodeSection: '= '
-    - startInstruction: 20
-      endInstruction: 19
-      startSourceChar: 295
-      endSourceChar: 310
-      line: 12
+    - startInstruction: 128
+      endInstruction: 127
+      startSourceChar: 597
+      endSourceChar: 612
+      line: 25
       lineChar: 35
       spanCodeSection: VRCInstantiate(
-    - startInstruction: 20
-      endInstruction: 63
-      startSourceChar: 310
-      endSourceChar: 330
-      line: 12
+    - startInstruction: 128
+      endInstruction: 171
+      startSourceChar: 612
+      endSourceChar: 632
+      line: 25
       lineChar: 50
       spanCodeSection: "original);\r\n        "
-    - startInstruction: 64
-      endInstruction: 63
-      startSourceChar: 330
-      endSourceChar: 330
-      line: 13
+    - startInstruction: 172
+      endInstruction: 171
+      startSourceChar: 632
+      endSourceChar: 632
+      line: 26
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 64
-      endInstruction: 63
-      startSourceChar: 330
-      endSourceChar: 377
-      line: 13
+    - startInstruction: 172
+      endInstruction: 171
+      startSourceChar: 632
+      endSourceChar: 679
+      line: 26
       lineChar: 8
       spanCodeSection: spawnedObject.transform.SetPositionAndRotation(
-    - startInstruction: 64
-      endInstruction: 63
-      startSourceChar: 377
-      endSourceChar: 377
-      line: 13
+    - startInstruction: 172
+      endInstruction: 171
+      startSourceChar: 679
+      endSourceChar: 679
+      line: 26
       lineChar: 55
       spanCodeSection: 
-    - startInstruction: 64
-      endInstruction: 63
-      startSourceChar: 377
-      endSourceChar: 386
-      line: 13
+    - startInstruction: 172
+      endInstruction: 171
+      startSourceChar: 679
+      endSourceChar: 688
+      line: 26
       lineChar: 55
       spanCodeSection: spawnPos.
-    - startInstruction: 64
-      endInstruction: 87
-      startSourceChar: 386
-      endSourceChar: 396
-      line: 13
+    - startInstruction: 172
+      endInstruction: 195
+      startSourceChar: 688
+      endSourceChar: 698
+      line: 26
       lineChar: 64
       spanCodeSection: 'position, '
-    - startInstruction: 88
-      endInstruction: 87
-      startSourceChar: 396
-      endSourceChar: 396
-      line: 13
+    - startInstruction: 196
+      endInstruction: 195
+      startSourceChar: 698
+      endSourceChar: 698
+      line: 26
       lineChar: 74
       spanCodeSection: 
-    - startInstruction: 88
-      endInstruction: 87
-      startSourceChar: 396
-      endSourceChar: 405
-      line: 13
+    - startInstruction: 196
+      endInstruction: 195
+      startSourceChar: 698
+      endSourceChar: 707
+      line: 26
       lineChar: 74
       spanCodeSection: spawnPos.
-    - startInstruction: 88
-      endInstruction: 167
-      startSourceChar: 405
-      endSourceChar: 425
-      line: 13
+    - startInstruction: 196
+      endInstruction: 275
+      startSourceChar: 707
+      endSourceChar: 727
+      line: 26
       lineChar: 83
       spanCodeSection: "rotation);\r\n        "
-    - startInstruction: 168
-      endInstruction: 167
-      startSourceChar: 425
-      endSourceChar: 425
-      line: 14
+    - startInstruction: 276
+      endInstruction: 275
+      startSourceChar: 727
+      endSourceChar: 727
+      line: 27
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 168
-      endInstruction: 167
-      startSourceChar: 425
-      endSourceChar: 449
-      line: 14
+    - startInstruction: 276
+      endInstruction: 275
+      startSourceChar: 727
+      endSourceChar: 751
+      line: 27
       lineChar: 8
       spanCodeSection: spawnedObject.SetActive(
-    - startInstruction: 168
-      endInstruction: 168
-      startSourceChar: 449
-      endSourceChar: 449
-      line: 14
+    - startInstruction: 276
+      endInstruction: 276
+      startSourceChar: 751
+      endSourceChar: 751
+      line: 27
       lineChar: 32
       spanCodeSection: 
   hasInteractEvent: 1
@@ -350,7 +553,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 3
+      Data: 4
     - Name: 
       Entry: 7
       Data: 
@@ -522,6 +725,63 @@ MonoBehaviour:
     - Name: fieldAttributes
       Entry: 7
       Data: 13|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: spawnGlobally
+    - Name: $v
+      Entry: 7
+      Data: 14|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 15|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 9
+      Data: 12
+    - Name: declarationType
+      Entry: 3
+      Data: 1
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: SystemBoolean
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: spawnGlobally
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: spawnGlobally
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 16|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
     - Name: 
       Entry: 12
       Data: 0

@@ -24,14 +24,10 @@ MonoBehaviour:
     \        # using UnityEngine;\r\n        \r\n         # using VRC.SDKBase;\r\n
     \       \r\n         # using VRC.Udon;\r\n        \r\n         # public class
     Teleporter : UdonSharpBehaviour\r\n.code_start\r\n        \r\n         # public
-    Transform teleportPos = null;\r\n        \r\n         # void Start()\r\n    .export
-    _start\r\n        \r\n    _start:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n
-    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        \r\n         #
-    {\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n
-    \        # public override void Interact()\r\n    .export _interact\r\n        \r\n
-    \   _interact:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH,
-    __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        \r\n         # {\r\n
-    \       \r\n         # Networking.LocalPlayer.TeleportTo(teleportPos.position,
+    Transform teleportPos = null;\r\n        \r\n         # public override void Interact()\r\n
+    \   .export _interact\r\n        \r\n    _interact:\r\n        \r\n        PUSH,
+    __0_const_intnl_SystemUInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        \r\n         # {\r\n        \r\n         # Networking.LocalPlayer.TeleportTo(teleportPos.position,
     teleportPos.rotation);\r\n        PUSH, teleportPos\r\n        PUSH, __0_intnl_UnityEngineVector3\r\n
     \       EXTERN, \"UnityEngineTransform.__get_position__UnityEngineVector3\"\r\n
     \       PUSH, teleportPos\r\n        PUSH, __0_intnl_UnityEngineQuaternion\r\n
@@ -196,85 +192,71 @@ MonoBehaviour:
     - startInstruction: 0
       endInstruction: 19
       startSourceChar: 176
-      endSourceChar: 194
+      endSourceChar: 213
       line: 10
       lineChar: 4
-      spanCodeSection: "void Start()\r\n    "
+      spanCodeSection: "public override void Interact()\r\n    "
     - startInstruction: 20
-      endInstruction: 27
-      startSourceChar: 194
-      endSourceChar: 220
+      endInstruction: 19
+      startSourceChar: 213
+      endSourceChar: 224
       line: 11
       lineChar: 4
-      spanCodeSection: "{\r\n        \r\n    }\r\n\r\n    "
-    - startInstruction: 28
-      endInstruction: 47
-      startSourceChar: 220
-      endSourceChar: 257
-      line: 15
-      lineChar: 4
-      spanCodeSection: "public override void Interact()\r\n    "
-    - startInstruction: 48
-      endInstruction: 47
-      startSourceChar: 257
-      endSourceChar: 268
-      line: 16
-      lineChar: 4
       spanCodeSection: "{\r\n        "
-    - startInstruction: 48
-      endInstruction: 47
-      startSourceChar: 268
-      endSourceChar: 268
-      line: 17
+    - startInstruction: 20
+      endInstruction: 19
+      startSourceChar: 224
+      endSourceChar: 224
+      line: 12
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 48
-      endInstruction: 47
-      startSourceChar: 268
-      endSourceChar: 302
-      line: 17
+    - startInstruction: 20
+      endInstruction: 19
+      startSourceChar: 224
+      endSourceChar: 258
+      line: 12
       lineChar: 8
       spanCodeSection: Networking.LocalPlayer.TeleportTo(
-    - startInstruction: 48
-      endInstruction: 47
-      startSourceChar: 302
-      endSourceChar: 302
-      line: 17
+    - startInstruction: 20
+      endInstruction: 19
+      startSourceChar: 258
+      endSourceChar: 258
+      line: 12
       lineChar: 42
       spanCodeSection: 
-    - startInstruction: 48
-      endInstruction: 47
-      startSourceChar: 302
-      endSourceChar: 314
-      line: 17
+    - startInstruction: 20
+      endInstruction: 19
+      startSourceChar: 258
+      endSourceChar: 270
+      line: 12
       lineChar: 42
       spanCodeSection: teleportPos.
-    - startInstruction: 48
-      endInstruction: 71
-      startSourceChar: 314
-      endSourceChar: 324
-      line: 17
+    - startInstruction: 20
+      endInstruction: 43
+      startSourceChar: 270
+      endSourceChar: 280
+      line: 12
       lineChar: 54
       spanCodeSection: 'position, '
-    - startInstruction: 72
-      endInstruction: 71
-      startSourceChar: 324
-      endSourceChar: 324
-      line: 17
+    - startInstruction: 44
+      endInstruction: 43
+      startSourceChar: 280
+      endSourceChar: 280
+      line: 12
       lineChar: 64
       spanCodeSection: 
-    - startInstruction: 72
-      endInstruction: 71
-      startSourceChar: 324
-      endSourceChar: 336
-      line: 17
+    - startInstruction: 44
+      endInstruction: 43
+      startSourceChar: 280
+      endSourceChar: 292
+      line: 12
       lineChar: 64
       spanCodeSection: teleportPos.
-    - startInstruction: 72
-      endInstruction: 72
-      startSourceChar: 336
-      endSourceChar: 336
-      line: 17
+    - startInstruction: 44
+      endInstruction: 44
+      startSourceChar: 292
+      endSourceChar: 292
+      line: 12
       lineChar: 76
       spanCodeSection: 
   hasInteractEvent: 1

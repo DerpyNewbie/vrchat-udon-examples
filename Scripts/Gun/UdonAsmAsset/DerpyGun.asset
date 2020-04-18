@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22203902d63dec94194fefc3e155c43b, type: 3}
   m_Name: DerpyGun
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 0}
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 6cf33c73b7c658d42a179d0981d0ed65,
+    type: 2}
   udonAssembly: 
   assemblyError: 

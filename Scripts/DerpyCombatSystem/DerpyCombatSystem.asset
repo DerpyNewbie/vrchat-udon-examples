@@ -14,28 +14,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serializedUdonProgramAsset: {fileID: 11400000, guid: 7dd7a83dff63de44f9dcdfaa2538c521,
     type: 2}
-  udonAssembly: ".data_start\r\n\r\n    .export respawnTimer\r\n    .export respawnPos\r\n\r\n
-    \   __refl_const_intnl_udonTypeID: %SystemInt64, null\r\n    __refl_const_intnl_udonTypeName:
-    %SystemString, null\r\n    respawnTimer: %SystemSingle, null\r\n    respawnPos:
+  udonAssembly: ".data_start\r\n\r\n    .export maxHp\r\n    .export respawnTimer\r\n
+    \   .export respawnPos\r\n\r\n    __refl_const_intnl_udonTypeID: %SystemInt64,
+    null\r\n    __refl_const_intnl_udonTypeName: %SystemString, null\r\n    maxHp:
+    %SystemSingle, null\r\n    respawnTimer: %SystemSingle, null\r\n    respawnPos:
     %UnityEngineTransform, null\r\n    inDeathProcess: %SystemBoolean, null\r\n    currentRespawnTimer:
     %SystemSingle, null\r\n    lastPosition: %UnityEngineVector3, null\r\n    player:
-    %VRCSDKBaseVRCPlayerApi, null\r\n    __0_hp_Single: %SystemSingle, null\r\n    __0_maxHp_Single:
-    %SystemSingle, null\r\n    __0_const_intnl_SystemBoolean: %SystemBoolean, null\r\n
-    \   __1_const_intnl_SystemBoolean: %SystemBoolean, null\r\n    __0_const_intnl_SystemInt32:
-    %SystemInt32, null\r\n    __0_const_intnl_SystemObject: %SystemObject, null\r\n
-    \   __0_const_intnl_SystemSingle: %SystemSingle, null\r\n    __0_const_intnl_SystemString:
-    %SystemString, null\r\n    __1_const_intnl_SystemString: %SystemString, null\r\n
-    \   __2_const_intnl_SystemString: %SystemString, null\r\n    __3_const_intnl_SystemString:
-    %SystemString, null\r\n    __4_const_intnl_SystemString: %SystemString, null\r\n
-    \   __5_const_intnl_SystemString: %SystemString, null\r\n    __6_const_intnl_SystemString:
-    %SystemString, null\r\n    __7_const_intnl_SystemString: %SystemString, null\r\n
-    \   __8_const_intnl_SystemString: %SystemString, null\r\n    __9_const_intnl_SystemString:
-    %SystemString, null\r\n    __0_const_intnl_VRCSDKBaseVRCPlayerApiTrackingDataType:
-    %VRCSDKBaseVRCPlayerApiTrackingDataType, null\r\n    __0_const_intnl_UnityEngineTransform:
-    %UnityEngineTransform, null\r\n    __0_const_intnl_exitJumpLoc_UInt32: %SystemUInt32,
-    null\r\n    __0_const_intnl_SystemUInt32: %SystemUInt32, null\r\n    __1_const_intnl_exitJumpLoc_UInt32:
-    %SystemUInt32, null\r\n    __0_const_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi,
-    null\r\n    __0_intnl_SystemBoolean: %SystemBoolean, null\r\n    __1_intnl_SystemBoolean:
+    %VRCSDKBaseVRCPlayerApi, null\r\n    __0_this_intnl_DerpyCombatSystem: %VRCUdonUdonBehaviour,
+    this\r\n    __0_hp_Single: %SystemSingle, null\r\n    __0_maxHp_Single: %SystemSingle,
+    null\r\n    __0_const_intnl_SystemBoolean: %SystemBoolean, null\r\n    __1_const_intnl_SystemBoolean:
+    %SystemBoolean, null\r\n    __0_const_intnl_SystemInt32: %SystemInt32, null\r\n
+    \   __0_const_intnl_SystemObject: %SystemObject, null\r\n    __0_const_intnl_SystemSingle:
+    %SystemSingle, null\r\n    __0_const_intnl_SystemString: %SystemString, null\r\n
+    \   __1_const_intnl_SystemString: %SystemString, null\r\n    __2_const_intnl_SystemString:
+    %SystemString, null\r\n    __3_const_intnl_SystemString: %SystemString, null\r\n
+    \   __4_const_intnl_SystemString: %SystemString, null\r\n    __5_const_intnl_SystemString:
+    %SystemString, null\r\n    __6_const_intnl_SystemString: %SystemString, null\r\n
+    \   __7_const_intnl_SystemString: %SystemString, null\r\n    __8_const_intnl_SystemString:
+    %SystemString, null\r\n    __9_const_intnl_SystemString: %SystemString, null\r\n
+    \   __0_const_intnl_VRCSDKBaseVRCPlayerApiTrackingDataType: %VRCSDKBaseVRCPlayerApiTrackingDataType,
+    null\r\n    __0_const_intnl_UnityEngineTransform: %UnityEngineTransform, null\r\n
+    \   __0_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null\r\n    __0_const_intnl_SystemUInt32:
+    %SystemUInt32, null\r\n    __1_const_intnl_exitJumpLoc_UInt32: %SystemUInt32,
+    null\r\n    __0_const_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null\r\n
+    \   __0_intnl_SystemBoolean: %SystemBoolean, null\r\n    __1_intnl_SystemBoolean:
     %SystemBoolean, null\r\n    __2_intnl_SystemBoolean: %SystemBoolean, null\r\n
     \   __3_intnl_SystemBoolean: %SystemBoolean, null\r\n    __4_intnl_SystemBoolean:
     %SystemBoolean, null\r\n    __0_intnl_UnityEngineQuaternion: %UnityEngineQuaternion,
@@ -48,9 +50,11 @@ MonoBehaviour:
     \   __0_intnl_SystemString: %SystemString, null\r\n    __1_intnl_interpolatedStr_String:
     %SystemString, null\r\n    __1_intnl_SystemString: %SystemString, null\r\n    __10_intnl_SystemString:
     %SystemString, null\r\n    __11_intnl_SystemString: %SystemString, null\r\n    __12_intnl_SystemString:
+    %SystemString, null\r\n    __13_intnl_SystemString: %SystemString, null\r\n    __14_intnl_SystemString:
     %SystemString, null\r\n    __2_intnl_interpolatedStr_String: %SystemString, null\r\n
     \   __2_intnl_SystemString: %SystemString, null\r\n    __3_intnl_interpolatedStr_String:
-    %SystemString, null\r\n    __3_intnl_SystemString: %SystemString, null\r\n    __4_intnl_SystemString:
+    %SystemString, null\r\n    __3_intnl_SystemString: %SystemString, null\r\n    __4_intnl_interpolatedStr_String:
+    %SystemString, null\r\n    __4_intnl_SystemString: %SystemString, null\r\n    __5_intnl_interpolatedStr_String:
     %SystemString, null\r\n    __5_intnl_SystemString: %SystemString, null\r\n    __6_intnl_SystemString:
     %SystemString, null\r\n    __7_intnl_SystemString: %SystemString, null\r\n    __8_intnl_SystemString:
     %SystemString, null\r\n    __9_intnl_SystemString: %SystemString, null\r\n    __0_intnl_VRCSDKBaseVRCPlayerApiTrackingData:
@@ -64,38 +68,52 @@ MonoBehaviour:
     \       \r\n         # using UdonSharp;\r\n        \r\n         # using UnityEngine;\r\n
     \       \r\n         # using VRC.SDKBase;\r\n        \r\n         # public class
     DerpyCombatSystem : UdonSharpBehaviour\r\n.code_start\r\n        \r\n         #
-    public float respawnTimer = 3F;\r\n        \r\n         # public Transform respawnPos
-    = null;\r\n        \r\n         # private float currentRespawnTimer = 0F;\r\n
-    \       \r\n         # private bool inDeathProcess = false;\r\n        \r\n         #
-    private Vector3 lastPosition = Vector3.zero;\r\n        \r\n         # private
-    VRCPlayerApi player = null;\r\n        \r\n         # private void Start()\r\n
-    \   .export _start\r\n        \r\n    _start:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n
-    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        \r\n         #
-    {\r\n        \r\n         # player = Networking.LocalPlayer;\r\n        PUSH,
-    __0_intnl_VRCSDKBaseVRCPlayerApi\r\n        EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n
+    public float maxHp = 100F;\r\n        \r\n         # public float respawnTimer
+    = 3F;\r\n        \r\n         # public Transform respawnPos = null;\r\n        \r\n
+    \        # private float currentRespawnTimer = 0F;\r\n        \r\n         # private
+    bool inDeathProcess = false;\r\n        \r\n         # private Vector3 lastPosition
+    = Vector3.zero;\r\n        \r\n         # private VRCPlayerApi player = null;\r\n
+    \       \r\n         # private void Start()\r\n    .export _start\r\n        \r\n
+    \   _start:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH,
+    __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        \r\n         # {\r\n
+    \       \r\n         # player = Networking.LocalPlayer;\r\n        PUSH, __0_intnl_VRCSDKBaseVRCPlayerApi\r\n
+    \       EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n
     \       PUSH, __0_intnl_VRCSDKBaseVRCPlayerApi\r\n        PUSH, player\r\n        COPY\r\n
-    \       \r\n         # currentRespawnTimer = respawnTimer;\r\n        PUSH, respawnTimer\r\n
-    \       PUSH, currentRespawnTimer\r\n        COPY\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n
-    \       \r\n        \r\n         # private void Update()\r\n    .export _update\r\n
-    \       \r\n    _update:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n
-    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        \r\n         #
-    {\r\n        \r\n         # if (player == null)\r\n        PUSH, player\r\n        PUSH,
+    \       \r\n         # if (player == null)\r\n        PUSH, player\r\n        PUSH,
     __1_intnl_VRCSDKBaseVRCPlayerApi\r\n        COPY\r\n        PUSH, __1_intnl_VRCSDKBaseVRCPlayerApi\r\n
     \       PUSH, __0_const_intnl_VRCSDKBaseVRCPlayerApi\r\n        PUSH, __0_intnl_SystemBoolean\r\n
     \       EXTERN, \"SystemObject.__op_Equality__SystemObject_SystemObject__SystemBoolean\"\r\n
-    \       PUSH, __0_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x000000B4\r\n
-    \       \r\n         # return;\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n
-    \       \r\n         # if (!inDeathProcess)\r\n        PUSH, inDeathProcess\r\n
-    \       PUSH, __1_intnl_SystemBoolean\r\n        EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n
-    \       PUSH, __1_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000128\r\n
-    \       \r\n         # TickHealthStatus();\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
-    \       PUSH, __0_intnl_oldReturnLoc_UInt32\r\n        COPY\r\n        PUSH, __0_const_intnl_exitJumpLoc_UInt32\r\n
-    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        JUMP, 0x00000618\r\n
+    \       PUSH, __0_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x0000008C\r\n
+    \       \r\n         # Destroy(this);\r\n        PUSH, __0_this_intnl_DerpyCombatSystem\r\n
+    \       EXTERN, \"UnityEngineObject.__Destroy__UnityEngineObject__SystemVoid\"\r\n
+    \       \r\n         # currentRespawnTimer = respawnTimer;\r\n        PUSH, respawnTimer\r\n
+    \       PUSH, currentRespawnTimer\r\n        COPY\r\n        \r\n         # player.SetPlayerTag(\"combat_hp\",
+    $\"{maxHp}\");\r\n        PUSH, maxHp\r\n        PUSH, __0_intnl_SystemString\r\n
+    \       EXTERN, \"SystemSingle.__ToString__SystemString\"\r\n        PUSH, __0_intnl_SystemString\r\n
+    \       PUSH, __0_intnl_interpolatedStr_String\r\n        COPY\r\n        PUSH,
+    player\r\n        PUSH, __0_const_intnl_SystemString\r\n        PUSH, __0_intnl_interpolatedStr_String\r\n
+    \       EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetPlayerTag__SystemString_SystemString__SystemVoid\"\r\n
+    \       \r\n         # player.SetPlayerTag(\"combat_max_hp\", $\"{maxHp}\");\r\n
+    \       PUSH, maxHp\r\n        PUSH, __1_intnl_SystemString\r\n        EXTERN,
+    \"SystemSingle.__ToString__SystemString\"\r\n        PUSH, __1_intnl_SystemString\r\n
+    \       PUSH, __1_intnl_interpolatedStr_String\r\n        COPY\r\n        PUSH,
+    player\r\n        PUSH, __1_const_intnl_SystemString\r\n        PUSH, __1_intnl_interpolatedStr_String\r\n
+    \       EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetPlayerTag__SystemString_SystemString__SystemVoid\"\r\n
+    \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n
+    \        # private void Update()\r\n    .export _update\r\n        \r\n    _update:\r\n
+    \       \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        \r\n         # {\r\n        \r\n         # if (!inDeathProcess)\r\n
+    \       PUSH, inDeathProcess\r\n        PUSH, __1_intnl_SystemBoolean\r\n        EXTERN,
+    \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n        PUSH,
+    __1_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x000001C8\r\n        \r\n         #
+    TickHealthStatus();\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n        PUSH,
+    __0_intnl_oldReturnLoc_UInt32\r\n        COPY\r\n        PUSH, __0_const_intnl_exitJumpLoc_UInt32\r\n
+    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        JUMP, 0x000006B8\r\n
     \       PUSH, __0_intnl_oldReturnLoc_UInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
-    \       COPY\r\n        JUMP, 0x0000016C\r\n        \r\n         # else\r\n        \r\n
+    \       COPY\r\n        JUMP, 0x0000020C\r\n        \r\n         # else\r\n        \r\n
     \        # TickDeathProcess();\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
     \       PUSH, __1_intnl_oldReturnLoc_UInt32\r\n        COPY\r\n        PUSH, __1_const_intnl_exitJumpLoc_UInt32\r\n
-    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        JUMP, 0x00000188\r\n
+    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        JUMP, 0x00000228\r\n
     \       PUSH, __1_intnl_oldReturnLoc_UInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
     \       COPY\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n
     \       \r\n         # private void TickDeathProcess()\r\n    TickDeathProcess:\r\n
@@ -119,12 +137,12 @@ MonoBehaviour:
     \       PUSH, __3_intnl_SystemSingle\r\n        COPY\r\n        PUSH, __3_intnl_SystemSingle\r\n
     \       PUSH, __0_const_intnl_SystemSingle\r\n        PUSH, __2_intnl_SystemBoolean\r\n
     \       EXTERN, \"SystemSingle.__op_LessThan__SystemSingle_SystemSingle__SystemBoolean\"\r\n
-    \       PUSH, __2_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x000005B0\r\n
+    \       PUSH, __2_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000650\r\n
     \       \r\n         # {\r\n        \r\n         # if (respawnPos != null)\r\n
     \       PUSH, respawnPos\r\n        PUSH, __0_intnl_UnityEngineTransform\r\n        COPY\r\n
     \       PUSH, __0_intnl_UnityEngineTransform\r\n        PUSH, __0_const_intnl_UnityEngineTransform\r\n
     \       PUSH, __3_intnl_SystemBoolean\r\n        EXTERN, \"UnityEngineObject.__op_Inequality__UnityEngineObject_UnityEngineObject__SystemBoolean\"\r\n
-    \       PUSH, __3_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x0000044C\r\n
+    \       PUSH, __3_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x000004EC\r\n
     \       \r\n         # {\r\n        \r\n         # player.TeleportTo(respawnPos.position,
     respawnPos.rotation);\r\n        PUSH, respawnPos\r\n        PUSH, __0_intnl_UnityEngineVector3\r\n
     \       EXTERN, \"UnityEngineTransform.__get_position__UnityEngineVector3\"\r\n
@@ -133,66 +151,66 @@ MonoBehaviour:
     \       PUSH, player\r\n        PUSH, __0_intnl_UnityEngineVector3\r\n        PUSH,
     __1_intnl_UnityEngineQuaternion\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__TeleportTo__UnityEngineVector3_UnityEngineQuaternion__SystemVoid\"\r\n
     \       \r\n         # Debug.Log($\"CombatSystem: Teleported {player.displayName}
-    to respawn position of {respawnPos.position}.\");\r\n        PUSH, __0_const_intnl_SystemString\r\n
-    \       PUSH, __0_intnl_interpolatedStr_String\r\n        COPY\r\n        PUSH,
-    player\r\n        PUSH, __0_intnl_SystemString\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__get_displayName__SystemString\"\r\n
-    \       PUSH, __0_intnl_interpolatedStr_String\r\n        PUSH, __0_intnl_SystemString\r\n
-    \       PUSH, __1_intnl_SystemString\r\n        EXTERN, \"SystemString.__op_Addition__SystemString_SystemString__SystemString\"\r\n
-    \       PUSH, __1_intnl_SystemString\r\n        PUSH, __0_intnl_interpolatedStr_String\r\n
-    \       COPY\r\n        PUSH, __0_intnl_interpolatedStr_String\r\n        PUSH,
-    __1_const_intnl_SystemString\r\n        PUSH, __2_intnl_SystemString\r\n        EXTERN,
+    to respawn position of {respawnPos.position}.\");\r\n        PUSH, __2_const_intnl_SystemString\r\n
+    \       PUSH, __2_intnl_interpolatedStr_String\r\n        COPY\r\n        PUSH,
+    player\r\n        PUSH, __2_intnl_SystemString\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__get_displayName__SystemString\"\r\n
+    \       PUSH, __2_intnl_interpolatedStr_String\r\n        PUSH, __2_intnl_SystemString\r\n
+    \       PUSH, __3_intnl_SystemString\r\n        EXTERN, \"SystemString.__op_Addition__SystemString_SystemString__SystemString\"\r\n
+    \       PUSH, __3_intnl_SystemString\r\n        PUSH, __2_intnl_interpolatedStr_String\r\n
+    \       COPY\r\n        PUSH, __2_intnl_interpolatedStr_String\r\n        PUSH,
+    __3_const_intnl_SystemString\r\n        PUSH, __4_intnl_SystemString\r\n        EXTERN,
     \"SystemString.__op_Addition__SystemString_SystemString__SystemString\"\r\n        PUSH,
-    __2_intnl_SystemString\r\n        PUSH, __0_intnl_interpolatedStr_String\r\n        COPY\r\n
+    __4_intnl_SystemString\r\n        PUSH, __2_intnl_interpolatedStr_String\r\n        COPY\r\n
     \       PUSH, respawnPos\r\n        PUSH, __1_intnl_UnityEngineVector3\r\n        EXTERN,
     \"UnityEngineTransform.__get_position__UnityEngineVector3\"\r\n        PUSH, __1_intnl_UnityEngineVector3\r\n
-    \       PUSH, __3_intnl_SystemString\r\n        EXTERN, \"UnityEngineVector3.__ToString__SystemString\"\r\n
-    \       PUSH, __0_intnl_interpolatedStr_String\r\n        PUSH, __3_intnl_SystemString\r\n
-    \       PUSH, __4_intnl_SystemString\r\n        EXTERN, \"SystemString.__op_Addition__SystemString_SystemString__SystemString\"\r\n
-    \       PUSH, __4_intnl_SystemString\r\n        PUSH, __0_intnl_interpolatedStr_String\r\n
-    \       COPY\r\n        PUSH, __0_intnl_interpolatedStr_String\r\n        PUSH,
-    __2_const_intnl_SystemString\r\n        PUSH, __5_intnl_SystemString\r\n        EXTERN,
+    \       PUSH, __5_intnl_SystemString\r\n        EXTERN, \"UnityEngineVector3.__ToString__SystemString\"\r\n
+    \       PUSH, __2_intnl_interpolatedStr_String\r\n        PUSH, __5_intnl_SystemString\r\n
+    \       PUSH, __6_intnl_SystemString\r\n        EXTERN, \"SystemString.__op_Addition__SystemString_SystemString__SystemString\"\r\n
+    \       PUSH, __6_intnl_SystemString\r\n        PUSH, __2_intnl_interpolatedStr_String\r\n
+    \       COPY\r\n        PUSH, __2_intnl_interpolatedStr_String\r\n        PUSH,
+    __4_const_intnl_SystemString\r\n        PUSH, __7_intnl_SystemString\r\n        EXTERN,
     \"SystemString.__op_Addition__SystemString_SystemString__SystemString\"\r\n        PUSH,
-    __5_intnl_SystemString\r\n        PUSH, __0_intnl_interpolatedStr_String\r\n        COPY\r\n
-    \       PUSH, __0_intnl_interpolatedStr_String\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n
+    __7_intnl_SystemString\r\n        PUSH, __2_intnl_interpolatedStr_String\r\n        COPY\r\n
+    \       PUSH, __2_intnl_interpolatedStr_String\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n
     \       \r\n         # currentRespawnTimer = respawnTimer;\r\n        PUSH, respawnTimer\r\n
     \       PUSH, currentRespawnTimer\r\n        COPY\r\n        \r\n         # Debug.Log($\"CombatSystem:
-    {player.displayName} is now able to move.\");\r\n        PUSH, __3_const_intnl_SystemString\r\n
-    \       PUSH, __0_intnl_interpolatedStr_String\r\n        COPY\r\n        PUSH,
-    player\r\n        PUSH, __0_intnl_SystemString\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__get_displayName__SystemString\"\r\n
-    \       PUSH, __0_intnl_interpolatedStr_String\r\n        PUSH, __0_intnl_SystemString\r\n
-    \       PUSH, __1_intnl_SystemString\r\n        EXTERN, \"SystemString.__op_Addition__SystemString_SystemString__SystemString\"\r\n
-    \       PUSH, __1_intnl_SystemString\r\n        PUSH, __0_intnl_interpolatedStr_String\r\n
-    \       COPY\r\n        PUSH, __0_intnl_interpolatedStr_String\r\n        PUSH,
-    __4_const_intnl_SystemString\r\n        PUSH, __2_intnl_SystemString\r\n        EXTERN,
+    {player.displayName} is now able to move.\");\r\n        PUSH, __5_const_intnl_SystemString\r\n
+    \       PUSH, __2_intnl_interpolatedStr_String\r\n        COPY\r\n        PUSH,
+    player\r\n        PUSH, __2_intnl_SystemString\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__get_displayName__SystemString\"\r\n
+    \       PUSH, __2_intnl_interpolatedStr_String\r\n        PUSH, __2_intnl_SystemString\r\n
+    \       PUSH, __3_intnl_SystemString\r\n        EXTERN, \"SystemString.__op_Addition__SystemString_SystemString__SystemString\"\r\n
+    \       PUSH, __3_intnl_SystemString\r\n        PUSH, __2_intnl_interpolatedStr_String\r\n
+    \       COPY\r\n        PUSH, __2_intnl_interpolatedStr_String\r\n        PUSH,
+    __6_const_intnl_SystemString\r\n        PUSH, __4_intnl_SystemString\r\n        EXTERN,
     \"SystemString.__op_Addition__SystemString_SystemString__SystemString\"\r\n        PUSH,
-    __2_intnl_SystemString\r\n        PUSH, __0_intnl_interpolatedStr_String\r\n        COPY\r\n
-    \       PUSH, __0_intnl_interpolatedStr_String\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n
+    __4_intnl_SystemString\r\n        PUSH, __2_intnl_interpolatedStr_String\r\n        COPY\r\n
+    \       PUSH, __2_intnl_interpolatedStr_String\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n
     \       \r\n         # float maxHp = float.Parse(player.GetPlayerTag(\"combat_max_hp\"));\r\n
-    \       PUSH, player\r\n        PUSH, __5_const_intnl_SystemString\r\n        PUSH,
-    __3_intnl_SystemString\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__GetPlayerTag__SystemString__SystemString\"\r\n
-    \       PUSH, __3_intnl_SystemString\r\n        PUSH, __4_intnl_SystemSingle\r\n
+    \       PUSH, player\r\n        PUSH, __1_const_intnl_SystemString\r\n        PUSH,
+    __5_intnl_SystemString\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__GetPlayerTag__SystemString__SystemString\"\r\n
+    \       PUSH, __5_intnl_SystemString\r\n        PUSH, __4_intnl_SystemSingle\r\n
     \       EXTERN, \"SystemSingle.__Parse__SystemString__SystemSingle\"\r\n        PUSH,
     __4_intnl_SystemSingle\r\n        PUSH, __0_maxHp_Single\r\n        COPY\r\n        \r\n
     \        # player.SetPlayerTag(\"combat_hp\", $\"{maxHp}\");\r\n        PUSH,
-    __0_maxHp_Single\r\n        PUSH, __4_intnl_SystemString\r\n        EXTERN, \"SystemSingle.__ToString__SystemString\"\r\n
-    \       PUSH, __4_intnl_SystemString\r\n        PUSH, __1_intnl_interpolatedStr_String\r\n
-    \       COPY\r\n        PUSH, player\r\n        PUSH, __6_const_intnl_SystemString\r\n
-    \       PUSH, __1_intnl_interpolatedStr_String\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetPlayerTag__SystemString_SystemString__SystemVoid\"\r\n
+    __0_maxHp_Single\r\n        PUSH, __6_intnl_SystemString\r\n        EXTERN, \"SystemSingle.__ToString__SystemString\"\r\n
+    \       PUSH, __6_intnl_SystemString\r\n        PUSH, __3_intnl_interpolatedStr_String\r\n
+    \       COPY\r\n        PUSH, player\r\n        PUSH, __0_const_intnl_SystemString\r\n
+    \       PUSH, __3_intnl_interpolatedStr_String\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetPlayerTag__SystemString_SystemString__SystemVoid\"\r\n
     \       \r\n         # inDeathProcess = false;\r\n        PUSH, __0_const_intnl_SystemBoolean\r\n
     \       PUSH, inDeathProcess\r\n        COPY\r\n        \r\n         # player.SetPlayerTag(\"combat_respawn_timer\",
     $\"{currentRespawnTimer}\");\r\n        PUSH, currentRespawnTimer\r\n        PUSH,
-    __0_intnl_SystemString\r\n        EXTERN, \"SystemSingle.__ToString__SystemString\"\r\n
-    \       PUSH, __0_intnl_SystemString\r\n        PUSH, __0_intnl_interpolatedStr_String\r\n
+    __2_intnl_SystemString\r\n        EXTERN, \"SystemSingle.__ToString__SystemString\"\r\n
+    \       PUSH, __2_intnl_SystemString\r\n        PUSH, __2_intnl_interpolatedStr_String\r\n
     \       COPY\r\n        PUSH, player\r\n        PUSH, __7_const_intnl_SystemString\r\n
-    \       PUSH, __0_intnl_interpolatedStr_String\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetPlayerTag__SystemString_SystemString__SystemVoid\"\r\n
+    \       PUSH, __2_intnl_interpolatedStr_String\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetPlayerTag__SystemString_SystemString__SystemVoid\"\r\n
     \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n
     \        # private void TickHealthStatus()\r\n    TickHealthStatus:\r\n        \r\n
     \       PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
     \       COPY\r\n        \r\n         # {\r\n        \r\n         # float hp =
     float.Parse(player.GetPlayerTag(\"combat_hp\"));\r\n        PUSH, player\r\n        PUSH,
-    __6_const_intnl_SystemString\r\n        PUSH, __6_intnl_SystemString\r\n        EXTERN,
+    __0_const_intnl_SystemString\r\n        PUSH, __8_intnl_SystemString\r\n        EXTERN,
     \"VRCSDKBaseVRCPlayerApi.__GetPlayerTag__SystemString__SystemString\"\r\n        PUSH,
-    __6_intnl_SystemString\r\n        PUSH, __5_intnl_SystemSingle\r\n        EXTERN,
+    __8_intnl_SystemString\r\n        PUSH, __5_intnl_SystemSingle\r\n        EXTERN,
     \"SystemSingle.__Parse__SystemString__SystemSingle\"\r\n        PUSH, __5_intnl_SystemSingle\r\n
     \       PUSH, __0_hp_Single\r\n        COPY\r\n        \r\n         # if (hp <
     0)\r\n        PUSH, __0_hp_Single\r\n        PUSH, __6_intnl_SystemSingle\r\n
@@ -200,34 +218,35 @@ MonoBehaviour:
     \       EXTERN, \"SystemConvert.__ToSingle__SystemInt32__SystemSingle\"\r\n        PUSH,
     __6_intnl_SystemSingle\r\n        PUSH, __7_intnl_SystemSingle\r\n        PUSH,
     __4_intnl_SystemBoolean\r\n        EXTERN, \"SystemSingle.__op_LessThan__SystemSingle_SystemSingle__SystemBoolean\"\r\n
-    \       PUSH, __4_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000848\r\n
+    \       PUSH, __4_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x000008E8\r\n
     \       \r\n         # {\r\n        \r\n         # Debug.Log($\"CombatSystem:
-    {player.displayName} has died!\");\r\n        PUSH, __3_const_intnl_SystemString\r\n
-    \       PUSH, __2_intnl_interpolatedStr_String\r\n        COPY\r\n        PUSH,
-    player\r\n        PUSH, __7_intnl_SystemString\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__get_displayName__SystemString\"\r\n
-    \       PUSH, __2_intnl_interpolatedStr_String\r\n        PUSH, __7_intnl_SystemString\r\n
-    \       PUSH, __8_intnl_SystemString\r\n        EXTERN, \"SystemString.__op_Addition__SystemString_SystemString__SystemString\"\r\n
-    \       PUSH, __8_intnl_SystemString\r\n        PUSH, __2_intnl_interpolatedStr_String\r\n
-    \       COPY\r\n        PUSH, __2_intnl_interpolatedStr_String\r\n        PUSH,
-    __8_const_intnl_SystemString\r\n        PUSH, __9_intnl_SystemString\r\n        EXTERN,
+    {player.displayName} has died!\");\r\n        PUSH, __5_const_intnl_SystemString\r\n
+    \       PUSH, __4_intnl_interpolatedStr_String\r\n        COPY\r\n        PUSH,
+    player\r\n        PUSH, __9_intnl_SystemString\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__get_displayName__SystemString\"\r\n
+    \       PUSH, __4_intnl_interpolatedStr_String\r\n        PUSH, __9_intnl_SystemString\r\n
+    \       PUSH, __10_intnl_SystemString\r\n        EXTERN, \"SystemString.__op_Addition__SystemString_SystemString__SystemString\"\r\n
+    \       PUSH, __10_intnl_SystemString\r\n        PUSH, __4_intnl_interpolatedStr_String\r\n
+    \       COPY\r\n        PUSH, __4_intnl_interpolatedStr_String\r\n        PUSH,
+    __8_const_intnl_SystemString\r\n        PUSH, __11_intnl_SystemString\r\n        EXTERN,
     \"SystemString.__op_Addition__SystemString_SystemString__SystemString\"\r\n        PUSH,
-    __9_intnl_SystemString\r\n        PUSH, __2_intnl_interpolatedStr_String\r\n        COPY\r\n
-    \       PUSH, __2_intnl_interpolatedStr_String\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n
-    \       \r\n         # lastPosition = player.GetPosition();\r\n        PUSH, player\r\n
-    \       PUSH, __2_intnl_UnityEngineVector3\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__GetPosition__UnityEngineVector3\"\r\n
+    __11_intnl_SystemString\r\n        PUSH, __4_intnl_interpolatedStr_String\r\n
+    \       COPY\r\n        PUSH, __4_intnl_interpolatedStr_String\r\n        EXTERN,
+    \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n        \r\n         #
+    lastPosition = player.GetPosition();\r\n        PUSH, player\r\n        PUSH,
+    __2_intnl_UnityEngineVector3\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__GetPosition__UnityEngineVector3\"\r\n
     \       PUSH, __2_intnl_UnityEngineVector3\r\n        PUSH, lastPosition\r\n        COPY\r\n
     \       \r\n         # Debug.Log($\"CombatSystem: {player.displayName} is now
-    unable to move.\");\r\n        PUSH, __3_const_intnl_SystemString\r\n        PUSH,
-    __3_intnl_interpolatedStr_String\r\n        COPY\r\n        PUSH, player\r\n        PUSH,
-    __10_intnl_SystemString\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__get_displayName__SystemString\"\r\n
-    \       PUSH, __3_intnl_interpolatedStr_String\r\n        PUSH, __10_intnl_SystemString\r\n
-    \       PUSH, __11_intnl_SystemString\r\n        EXTERN, \"SystemString.__op_Addition__SystemString_SystemString__SystemString\"\r\n
-    \       PUSH, __11_intnl_SystemString\r\n        PUSH, __3_intnl_interpolatedStr_String\r\n
-    \       COPY\r\n        PUSH, __3_intnl_interpolatedStr_String\r\n        PUSH,
-    __9_const_intnl_SystemString\r\n        PUSH, __12_intnl_SystemString\r\n        EXTERN,
+    unable to move.\");\r\n        PUSH, __5_const_intnl_SystemString\r\n        PUSH,
+    __5_intnl_interpolatedStr_String\r\n        COPY\r\n        PUSH, player\r\n        PUSH,
+    __12_intnl_SystemString\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__get_displayName__SystemString\"\r\n
+    \       PUSH, __5_intnl_interpolatedStr_String\r\n        PUSH, __12_intnl_SystemString\r\n
+    \       PUSH, __13_intnl_SystemString\r\n        EXTERN, \"SystemString.__op_Addition__SystemString_SystemString__SystemString\"\r\n
+    \       PUSH, __13_intnl_SystemString\r\n        PUSH, __5_intnl_interpolatedStr_String\r\n
+    \       COPY\r\n        PUSH, __5_intnl_interpolatedStr_String\r\n        PUSH,
+    __9_const_intnl_SystemString\r\n        PUSH, __14_intnl_SystemString\r\n        EXTERN,
     \"SystemString.__op_Addition__SystemString_SystemString__SystemString\"\r\n        PUSH,
-    __12_intnl_SystemString\r\n        PUSH, __3_intnl_interpolatedStr_String\r\n
-    \       COPY\r\n        PUSH, __3_intnl_interpolatedStr_String\r\n        EXTERN,
+    __14_intnl_SystemString\r\n        PUSH, __5_intnl_interpolatedStr_String\r\n
+    \       COPY\r\n        PUSH, __5_intnl_interpolatedStr_String\r\n        EXTERN,
     \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n        \r\n         #
     inDeathProcess = true;\r\n        PUSH, __1_const_intnl_SystemBoolean\r\n        PUSH,
     inDeathProcess\r\n        COPY\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n
@@ -353,1205 +372,1324 @@ MonoBehaviour:
     - startInstruction: 0
       endInstruction: -1
       startSourceChar: 127
-      endSourceChar: 157
+      endSourceChar: 152
       line: 6
       lineChar: 11
-      spanCodeSection: "float respawnTimer = 3F;\r\n    "
+      spanCodeSection: "float maxHp = 100F;\r\n    "
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 157
-      endSourceChar: 164
+      startSourceChar: 152
+      endSourceChar: 159
       line: 7
       lineChar: 4
       spanCodeSection: 'public '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 164
-      endSourceChar: 164
+      startSourceChar: 159
+      endSourceChar: 159
       line: 7
       lineChar: 11
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 164
-      endSourceChar: 200
+      startSourceChar: 159
+      endSourceChar: 189
       line: 7
+      lineChar: 11
+      spanCodeSection: "float respawnTimer = 3F;\r\n    "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 189
+      endSourceChar: 196
+      line: 8
+      lineChar: 4
+      spanCodeSection: 'public '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 196
+      endSourceChar: 196
+      line: 8
+      lineChar: 11
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 196
+      endSourceChar: 232
+      line: 8
       lineChar: 11
       spanCodeSection: "Transform respawnPos = null;\r\n\r\n    "
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 200
-      endSourceChar: 208
-      line: 9
+      startSourceChar: 232
+      endSourceChar: 240
+      line: 10
       lineChar: 4
       spanCodeSection: 'private '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 208
-      endSourceChar: 208
-      line: 9
+      startSourceChar: 240
+      endSourceChar: 240
+      line: 10
       lineChar: 12
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 208
-      endSourceChar: 245
-      line: 9
+      startSourceChar: 240
+      endSourceChar: 277
+      line: 10
       lineChar: 12
       spanCodeSection: "float currentRespawnTimer = 0F;\r\n    "
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 245
-      endSourceChar: 253
-      line: 10
+      startSourceChar: 277
+      endSourceChar: 285
+      line: 11
       lineChar: 4
       spanCodeSection: 'private '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 253
-      endSourceChar: 253
-      line: 10
+      startSourceChar: 285
+      endSourceChar: 285
+      line: 11
       lineChar: 12
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 253
-      endSourceChar: 287
-      line: 10
+      startSourceChar: 285
+      endSourceChar: 319
+      line: 11
       lineChar: 12
       spanCodeSection: "bool inDeathProcess = false;\r\n    "
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 287
-      endSourceChar: 295
-      line: 11
+      startSourceChar: 319
+      endSourceChar: 327
+      line: 12
       lineChar: 4
       spanCodeSection: 'private '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 295
-      endSourceChar: 295
-      line: 11
+      startSourceChar: 327
+      endSourceChar: 327
+      line: 12
       lineChar: 12
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 295
-      endSourceChar: 337
-      line: 11
+      startSourceChar: 327
+      endSourceChar: 369
+      line: 12
       lineChar: 12
       spanCodeSection: "Vector3 lastPosition = Vector3.zero;\r\n    "
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 337
-      endSourceChar: 345
-      line: 12
+      startSourceChar: 369
+      endSourceChar: 377
+      line: 13
       lineChar: 4
       spanCodeSection: 'private '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 345
-      endSourceChar: 345
-      line: 12
+      startSourceChar: 377
+      endSourceChar: 377
+      line: 13
       lineChar: 12
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 345
-      endSourceChar: 380
-      line: 12
+      startSourceChar: 377
+      endSourceChar: 412
+      line: 13
       lineChar: 12
       spanCodeSection: "VRCPlayerApi player = null;\r\n\r\n    "
     - startInstruction: 0
       endInstruction: 19
-      startSourceChar: 380
-      endSourceChar: 406
-      line: 14
+      startSourceChar: 412
+      endSourceChar: 438
+      line: 15
       lineChar: 4
       spanCodeSection: "private void Start()\r\n    "
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 406
-      endSourceChar: 417
-      line: 15
+      startSourceChar: 438
+      endSourceChar: 449
+      line: 16
       lineChar: 4
       spanCodeSection: "{\r\n        "
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 417
-      endSourceChar: 417
-      line: 16
+      startSourceChar: 449
+      endSourceChar: 449
+      line: 17
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 417
-      endSourceChar: 426
-      line: 16
+      startSourceChar: 449
+      endSourceChar: 458
+      line: 17
       lineChar: 8
       spanCodeSection: 'player = '
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 426
-      endSourceChar: 426
-      line: 16
+      startSourceChar: 458
+      endSourceChar: 458
+      line: 17
       lineChar: 17
       spanCodeSection: 
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 426
-      endSourceChar: 437
-      line: 16
+      startSourceChar: 458
+      endSourceChar: 469
+      line: 17
       lineChar: 17
       spanCodeSection: Networking.
     - startInstruction: 20
       endInstruction: 55
-      startSourceChar: 437
-      endSourceChar: 459
-      line: 16
+      startSourceChar: 469
+      endSourceChar: 491
+      line: 17
       lineChar: 28
       spanCodeSection: "LocalPlayer;\r\n        "
     - startInstruction: 56
       endInstruction: 55
-      startSourceChar: 459
-      endSourceChar: 459
-      line: 17
+      startSourceChar: 491
+      endSourceChar: 495
+      line: 18
       lineChar: 8
-      spanCodeSection: 
+      spanCodeSection: if (
     - startInstruction: 56
       endInstruction: 55
-      startSourceChar: 459
-      endSourceChar: 481
-      line: 17
-      lineChar: 8
-      spanCodeSection: 'currentRespawnTimer = '
-    - startInstruction: 56
-      endInstruction: 83
-      startSourceChar: 481
-      endSourceChar: 509
-      line: 17
-      lineChar: 30
-      spanCodeSection: "respawnTimer;\r\n    }\r\n\r\n    "
-    - startInstruction: 84
-      endInstruction: 103
-      startSourceChar: 509
-      endSourceChar: 536
-      line: 20
-      lineChar: 4
-      spanCodeSection: "private void Update()\r\n    "
-    - startInstruction: 104
-      endInstruction: 103
-      startSourceChar: 536
-      endSourceChar: 547
-      line: 21
-      lineChar: 4
-      spanCodeSection: "{\r\n        "
-    - startInstruction: 104
-      endInstruction: 103
-      startSourceChar: 547
-      endSourceChar: 551
-      line: 22
-      lineChar: 8
-      spanCodeSection: if (
-    - startInstruction: 104
-      endInstruction: 103
-      startSourceChar: 551
-      endSourceChar: 551
-      line: 22
+      startSourceChar: 495
+      endSourceChar: 495
+      line: 18
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 104
-      endInstruction: 123
-      startSourceChar: 551
-      endSourceChar: 561
-      line: 22
+    - startInstruction: 56
+      endInstruction: 75
+      startSourceChar: 495
+      endSourceChar: 505
+      line: 18
       lineChar: 12
       spanCodeSection: 'player == '
+    - startInstruction: 76
+      endInstruction: 123
+      startSourceChar: 505
+      endSourceChar: 524
+      line: 18
+      lineChar: 22
+      spanCodeSection: "null)\r\n            "
     - startInstruction: 124
-      endInstruction: 171
-      startSourceChar: 561
-      endSourceChar: 580
-      line: 22
-      lineChar: 22
-      spanCodeSection: "null)\r\n            "
-    - startInstruction: 172
-      endInstruction: 179
-      startSourceChar: 580
-      endSourceChar: 599
+      endInstruction: 123
+      startSourceChar: 524
+      endSourceChar: 524
+      line: 19
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 124
+      endInstruction: 123
+      startSourceChar: 524
+      endSourceChar: 532
+      line: 19
+      lineChar: 12
+      spanCodeSection: Destroy(
+    - startInstruction: 124
+      endInstruction: 139
+      startSourceChar: 532
+      endSourceChar: 550
+      line: 19
+      lineChar: 20
+      spanCodeSection: "this);\r\n\r\n        "
+    - startInstruction: 140
+      endInstruction: 139
+      startSourceChar: 550
+      endSourceChar: 550
+      line: 21
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 140
+      endInstruction: 139
+      startSourceChar: 550
+      endSourceChar: 572
+      line: 21
+      lineChar: 8
+      spanCodeSection: 'currentRespawnTimer = '
+    - startInstruction: 140
+      endInstruction: 159
+      startSourceChar: 572
+      endSourceChar: 597
+      line: 21
+      lineChar: 30
+      spanCodeSection: "respawnTimer;\r\n\r\n        "
+    - startInstruction: 160
+      endInstruction: 159
+      startSourceChar: 597
+      endSourceChar: 597
       line: 23
-      lineChar: 12
-      spanCodeSection: "return;\r\n\r\n        "
-    - startInstruction: 180
-      endInstruction: 179
-      startSourceChar: 599
-      endSourceChar: 603
-      line: 25
-      lineChar: 8
-      spanCodeSection: if (
-    - startInstruction: 180
-      endInstruction: 179
-      startSourceChar: 603
-      endSourceChar: 604
-      line: 25
-      lineChar: 12
-      spanCodeSection: '!'
-    - startInstruction: 180
-      endInstruction: 219
-      startSourceChar: 604
-      endSourceChar: 633
-      line: 25
-      lineChar: 13
-      spanCodeSection: "inDeathProcess)\r\n            "
-    - startInstruction: 220
-      endInstruction: 219
-      startSourceChar: 633
-      endSourceChar: 633
-      line: 26
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 220
-      endInstruction: 219
-      startSourceChar: 633
-      endSourceChar: 633
-      line: 26
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 220
-      endInstruction: 295
-      startSourceChar: 633
-      endSourceChar: 662
-      line: 26
-      lineChar: 12
-      spanCodeSection: "TickHealthStatus();\r\n        "
-    - startInstruction: 296
-      endInstruction: 295
-      startSourceChar: 662
-      endSourceChar: 680
-      line: 27
-      lineChar: 8
-      spanCodeSection: "else\r\n            "
-    - startInstruction: 296
-      endInstruction: 295
-      startSourceChar: 680
-      endSourceChar: 680
-      line: 28
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 296
-      endInstruction: 295
-      startSourceChar: 680
-      endSourceChar: 680
-      line: 28
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 296
-      endInstruction: 371
-      startSourceChar: 680
-      endSourceChar: 714
-      line: 28
-      lineChar: 12
-      spanCodeSection: "TickDeathProcess();\r\n    }\r\n\r\n    "
-    - startInstruction: 372
-      endInstruction: 391
-      startSourceChar: 714
-      endSourceChar: 751
-      line: 31
-      lineChar: 4
-      spanCodeSection: "private void TickDeathProcess()\r\n    "
-    - startInstruction: 392
-      endInstruction: 391
-      startSourceChar: 751
-      endSourceChar: 762
-      line: 32
-      lineChar: 4
-      spanCodeSection: "{\r\n        "
-    - startInstruction: 392
-      endInstruction: 391
-      startSourceChar: 762
-      endSourceChar: 762
-      line: 33
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 392
-      endInstruction: 391
-      startSourceChar: 762
-      endSourceChar: 784
-      line: 33
+    - startInstruction: 160
+      endInstruction: 159
+      startSourceChar: 597
+      endSourceChar: 617
+      line: 23
       lineChar: 8
-      spanCodeSection: 'currentRespawnTimer = '
-    - startInstruction: 392
-      endInstruction: 391
-      startSourceChar: 784
-      endSourceChar: 784
-      line: 33
-      lineChar: 30
-      spanCodeSection: 
-    - startInstruction: 392
-      endInstruction: 411
-      startSourceChar: 784
-      endSourceChar: 806
-      line: 33
-      lineChar: 30
-      spanCodeSection: 'currentRespawnTimer - '
-    - startInstruction: 412
-      endInstruction: 411
-      startSourceChar: 806
-      endSourceChar: 806
-      line: 33
-      lineChar: 52
-      spanCodeSection: 
-    - startInstruction: 412
-      endInstruction: 411
-      startSourceChar: 806
-      endSourceChar: 811
-      line: 33
-      lineChar: 52
-      spanCodeSection: Time.
-    - startInstruction: 412
-      endInstruction: 479
-      startSourceChar: 811
-      endSourceChar: 838
-      line: 33
-      lineChar: 57
-      spanCodeSection: "fixedDeltaTime;\r\n\r\n        "
-    - startInstruction: 480
-      endInstruction: 479
-      startSourceChar: 838
-      endSourceChar: 838
-      line: 35
-      lineChar: 8
-      spanCodeSection: 
-    - startInstruction: 480
-      endInstruction: 479
-      startSourceChar: 838
-      endSourceChar: 856
-      line: 35
-      lineChar: 8
-      spanCodeSection: player.TeleportTo(
-    - startInstruction: 480
-      endInstruction: 479
-      startSourceChar: 856
-      endSourceChar: 870
-      line: 35
-      lineChar: 26
-      spanCodeSection: 'lastPosition, '
-    - startInstruction: 480
-      endInstruction: 479
-      startSourceChar: 870
-      endSourceChar: 870
-      line: 35
-      lineChar: 40
-      spanCodeSection: 
-    - startInstruction: 480
-      endInstruction: 479
-      startSourceChar: 870
-      endSourceChar: 893
-      line: 35
-      lineChar: 40
-      spanCodeSection: player.GetTrackingData(
-    - startInstruction: 480
-      endInstruction: 479
-      startSourceChar: 893
-      endSourceChar: 893
-      line: 35
-      lineChar: 63
-      spanCodeSection: 
-    - startInstruction: 480
-      endInstruction: 479
-      startSourceChar: 893
-      endSourceChar: 893
-      line: 35
-      lineChar: 63
-      spanCodeSection: 
-    - startInstruction: 480
-      endInstruction: 479
-      startSourceChar: 893
-      endSourceChar: 906
-      line: 35
-      lineChar: 63
-      spanCodeSection: VRCPlayerApi.
-    - startInstruction: 480
-      endInstruction: 479
-      startSourceChar: 906
-      endSourceChar: 923
-      line: 35
-      lineChar: 76
-      spanCodeSection: TrackingDataType.
-    - startInstruction: 480
-      endInstruction: 511
-      startSourceChar: 923
-      endSourceChar: 929
-      line: 35
-      lineChar: 93
-      spanCodeSection: Head).
-    - startInstruction: 512
-      endInstruction: 567
-      startSourceChar: 929
-      endSourceChar: 951
-      line: 35
-      lineChar: 99
-      spanCodeSection: "rotation);\r\n\r\n        "
-    - startInstruction: 568
-      endInstruction: 567
-      startSourceChar: 951
-      endSourceChar: 955
-      line: 37
-      lineChar: 8
-      spanCodeSection: if (
-    - startInstruction: 568
-      endInstruction: 567
-      startSourceChar: 955
-      endSourceChar: 955
-      line: 37
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 568
-      endInstruction: 587
-      startSourceChar: 955
-      endSourceChar: 977
-      line: 37
-      lineChar: 12
-      spanCodeSection: 'currentRespawnTimer < '
-    - startInstruction: 588
-      endInstruction: 635
-      startSourceChar: 977
-      endSourceChar: 990
-      line: 37
-      lineChar: 34
-      spanCodeSection: "0F)\r\n        "
-    - startInstruction: 636
-      endInstruction: 635
-      startSourceChar: 990
-      endSourceChar: 1005
-      line: 38
-      lineChar: 8
-      spanCodeSection: "{\r\n            "
-    - startInstruction: 636
-      endInstruction: 635
-      startSourceChar: 1005
-      endSourceChar: 1009
-      line: 39
-      lineChar: 12
-      spanCodeSection: if (
-    - startInstruction: 636
-      endInstruction: 635
-      startSourceChar: 1009
-      endSourceChar: 1009
-      line: 39
-      lineChar: 16
-      spanCodeSection: 
-    - startInstruction: 636
-      endInstruction: 655
-      startSourceChar: 1009
-      endSourceChar: 1023
-      line: 39
-      lineChar: 16
-      spanCodeSection: 'respawnPos != '
-    - startInstruction: 656
-      endInstruction: 703
-      startSourceChar: 1023
-      endSourceChar: 1042
-      line: 39
-      lineChar: 30
-      spanCodeSection: "null)\r\n            "
-    - startInstruction: 704
-      endInstruction: 703
-      startSourceChar: 1042
-      endSourceChar: 1061
-      line: 40
-      lineChar: 12
-      spanCodeSection: "{\r\n                "
-    - startInstruction: 704
-      endInstruction: 703
-      startSourceChar: 1061
-      endSourceChar: 1061
-      line: 41
-      lineChar: 16
-      spanCodeSection: 
-    - startInstruction: 704
-      endInstruction: 703
-      startSourceChar: 1061
-      endSourceChar: 1079
-      line: 41
-      lineChar: 16
-      spanCodeSection: player.TeleportTo(
-    - startInstruction: 704
-      endInstruction: 703
-      startSourceChar: 1079
-      endSourceChar: 1079
-      line: 41
-      lineChar: 34
-      spanCodeSection: 
-    - startInstruction: 704
-      endInstruction: 703
-      startSourceChar: 1079
-      endSourceChar: 1090
-      line: 41
-      lineChar: 34
-      spanCodeSection: respawnPos.
-    - startInstruction: 704
-      endInstruction: 727
-      startSourceChar: 1090
-      endSourceChar: 1100
-      line: 41
-      lineChar: 45
-      spanCodeSection: 'position, '
-    - startInstruction: 728
-      endInstruction: 727
-      startSourceChar: 1100
-      endSourceChar: 1100
-      line: 41
-      lineChar: 55
-      spanCodeSection: 
-    - startInstruction: 728
-      endInstruction: 727
-      startSourceChar: 1100
-      endSourceChar: 1111
-      line: 41
-      lineChar: 55
-      spanCodeSection: respawnPos.
-    - startInstruction: 728
-      endInstruction: 783
-      startSourceChar: 1111
-      endSourceChar: 1139
-      line: 41
-      lineChar: 66
-      spanCodeSection: "rotation);\r\n                "
-    - startInstruction: 784
-      endInstruction: 783
-      startSourceChar: 1139
-      endSourceChar: 1139
-      line: 42
-      lineChar: 16
-      spanCodeSection: 
-    - startInstruction: 784
-      endInstruction: 783
-      startSourceChar: 1139
-      endSourceChar: 1149
-      line: 42
-      lineChar: 16
-      spanCodeSection: Debug.Log(
-    - startInstruction: 784
-      endInstruction: 783
-      startSourceChar: 1149
-      endSourceChar: 1151
-      line: 42
-      lineChar: 26
-      spanCodeSection: $"
-    - startInstruction: 784
-      endInstruction: 803
-      startSourceChar: 1151
-      endSourceChar: 1176
-      line: 42
-      lineChar: 28
-      spanCodeSection: 'CombatSystem: Teleported '
-    - startInstruction: 804
-      endInstruction: 803
-      startSourceChar: 1176
-      endSourceChar: 1177
-      line: 42
-      lineChar: 53
-      spanCodeSection: '{'
-    - startInstruction: 804
-      endInstruction: 803
-      startSourceChar: 1177
-      endSourceChar: 1177
-      line: 42
-      lineChar: 54
-      spanCodeSection: 
-    - startInstruction: 804
-      endInstruction: 803
-      startSourceChar: 1177
-      endSourceChar: 1184
-      line: 42
-      lineChar: 54
-      spanCodeSection: player.
-    - startInstruction: 804
-      endInstruction: 879
-      startSourceChar: 1184
-      endSourceChar: 1196
-      line: 42
-      lineChar: 61
-      spanCodeSection: displayName}
-    - startInstruction: 880
-      endInstruction: 931
-      startSourceChar: 1196
-      endSourceChar: 1220
-      line: 42
-      lineChar: 73
-      spanCodeSection: ' to respawn position of '
-    - startInstruction: 932
-      endInstruction: 931
-      startSourceChar: 1220
-      endSourceChar: 1221
-      line: 42
-      lineChar: 97
-      spanCodeSection: '{'
-    - startInstruction: 932
-      endInstruction: 931
-      startSourceChar: 1221
-      endSourceChar: 1221
-      line: 42
-      lineChar: 98
-      spanCodeSection: 
-    - startInstruction: 932
-      endInstruction: 931
-      startSourceChar: 1221
-      endSourceChar: 1232
-      line: 42
-      lineChar: 98
-      spanCodeSection: respawnPos.
-    - startInstruction: 932
-      endInstruction: 1031
-      startSourceChar: 1232
-      endSourceChar: 1241
-      line: 42
-      lineChar: 109
-      spanCodeSection: position}
-    - startInstruction: 1032
-      endInstruction: 1099
-      startSourceChar: 1241
-      endSourceChar: 1276
-      line: 42
-      lineChar: 118
-      spanCodeSection: ".\");\r\n            }\r\n\r\n            "
-    - startInstruction: 1100
-      endInstruction: 1099
-      startSourceChar: 1276
-      endSourceChar: 1276
-      line: 45
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 1100
-      endInstruction: 1099
-      startSourceChar: 1276
-      endSourceChar: 1298
-      line: 45
-      lineChar: 12
-      spanCodeSection: 'currentRespawnTimer = '
-    - startInstruction: 1100
-      endInstruction: 1119
-      startSourceChar: 1298
-      endSourceChar: 1327
-      line: 45
-      lineChar: 34
-      spanCodeSection: "respawnTimer;\r\n\r\n            "
-    - startInstruction: 1120
-      endInstruction: 1119
-      startSourceChar: 1327
-      endSourceChar: 1327
-      line: 47
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 1120
-      endInstruction: 1119
-      startSourceChar: 1327
-      endSourceChar: 1337
-      line: 47
-      lineChar: 12
-      spanCodeSection: Debug.Log(
-    - startInstruction: 1120
-      endInstruction: 1119
-      startSourceChar: 1337
-      endSourceChar: 1339
-      line: 47
-      lineChar: 22
-      spanCodeSection: $"
-    - startInstruction: 1120
-      endInstruction: 1139
-      startSourceChar: 1339
-      endSourceChar: 1353
-      line: 47
-      lineChar: 24
-      spanCodeSection: 'CombatSystem: '
-    - startInstruction: 1140
-      endInstruction: 1139
-      startSourceChar: 1353
-      endSourceChar: 1354
-      line: 47
-      lineChar: 38
-      spanCodeSection: '{'
-    - startInstruction: 1140
-      endInstruction: 1139
-      startSourceChar: 1354
-      endSourceChar: 1354
-      line: 47
-      lineChar: 39
-      spanCodeSection: 
-    - startInstruction: 1140
-      endInstruction: 1139
-      startSourceChar: 1354
-      endSourceChar: 1361
-      line: 47
-      lineChar: 39
-      spanCodeSection: player.
-    - startInstruction: 1140
-      endInstruction: 1215
-      startSourceChar: 1361
-      endSourceChar: 1373
-      line: 47
-      lineChar: 46
-      spanCodeSection: displayName}
-    - startInstruction: 1216
-      endInstruction: 1283
-      startSourceChar: 1373
-      endSourceChar: 1413
-      line: 47
-      lineChar: 58
-      spanCodeSection: " is now able to move.\");\r\n\r\n            "
-    - startInstruction: 1284
-      endInstruction: 1283
-      startSourceChar: 1413
-      endSourceChar: 1413
-      line: 49
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 1284
-      endInstruction: 1283
-      startSourceChar: 1413
-      endSourceChar: 1413
-      line: 49
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 1284
-      endInstruction: 1283
-      startSourceChar: 1413
-      endSourceChar: 1413
-      line: 49
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 1284
-      endInstruction: 1283
-      startSourceChar: 1413
-      endSourceChar: 1425
-      line: 49
-      lineChar: 12
-      spanCodeSection: 'float maxHp '
-    - startInstruction: 1284
-      endInstruction: 1283
-      startSourceChar: 1425
-      endSourceChar: 1427
-      line: 49
-      lineChar: 24
-      spanCodeSection: '= '
-    - startInstruction: 1284
-      endInstruction: 1283
-      startSourceChar: 1427
-      endSourceChar: 1439
-      line: 49
-      lineChar: 26
-      spanCodeSection: float.Parse(
-    - startInstruction: 1284
-      endInstruction: 1283
-      startSourceChar: 1439
-      endSourceChar: 1459
-      line: 49
-      lineChar: 38
-      spanCodeSection: player.GetPlayerTag(
-    - startInstruction: 1284
-      endInstruction: 1359
-      startSourceChar: 1459
-      endSourceChar: 1491
-      line: 49
-      lineChar: 58
-      spanCodeSection: "\"combat_max_hp\"));\r\n            "
-    - startInstruction: 1360
-      endInstruction: 1359
-      startSourceChar: 1491
-      endSourceChar: 1491
-      line: 50
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 1360
-      endInstruction: 1359
-      startSourceChar: 1491
-      endSourceChar: 1511
-      line: 50
-      lineChar: 12
       spanCodeSection: player.SetPlayerTag(
-    - startInstruction: 1360
-      endInstruction: 1359
-      startSourceChar: 1511
-      endSourceChar: 1524
-      line: 50
-      lineChar: 32
+    - startInstruction: 160
+      endInstruction: 159
+      startSourceChar: 617
+      endSourceChar: 630
+      line: 23
+      lineChar: 28
       spanCodeSection: '"combat_hp", '
-    - startInstruction: 1360
-      endInstruction: 1359
-      startSourceChar: 1524
-      endSourceChar: 1526
-      line: 50
+    - startInstruction: 160
+      endInstruction: 159
+      startSourceChar: 630
+      endSourceChar: 632
+      line: 23
+      lineChar: 41
+      spanCodeSection: $"
+    - startInstruction: 160
+      endInstruction: 159
+      startSourceChar: 632
+      endSourceChar: 633
+      line: 23
+      lineChar: 43
+      spanCodeSection: '{'
+    - startInstruction: 160
+      endInstruction: 235
+      startSourceChar: 633
+      endSourceChar: 652
+      line: 23
+      lineChar: 44
+      spanCodeSection: "maxHp}\");\r\n        "
+    - startInstruction: 236
+      endInstruction: 235
+      startSourceChar: 652
+      endSourceChar: 652
+      line: 24
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 236
+      endInstruction: 235
+      startSourceChar: 652
+      endSourceChar: 672
+      line: 24
+      lineChar: 8
+      spanCodeSection: player.SetPlayerTag(
+    - startInstruction: 236
+      endInstruction: 235
+      startSourceChar: 672
+      endSourceChar: 689
+      line: 24
+      lineChar: 28
+      spanCodeSection: '"combat_max_hp", '
+    - startInstruction: 236
+      endInstruction: 235
+      startSourceChar: 689
+      endSourceChar: 691
+      line: 24
       lineChar: 45
       spanCodeSection: $"
-    - startInstruction: 1360
-      endInstruction: 1359
-      startSourceChar: 1526
-      endSourceChar: 1527
-      line: 50
+    - startInstruction: 236
+      endInstruction: 235
+      startSourceChar: 691
+      endSourceChar: 692
+      line: 24
       lineChar: 47
       spanCodeSection: '{'
-    - startInstruction: 1360
-      endInstruction: 1435
-      startSourceChar: 1527
-      endSourceChar: 1552
-      line: 50
+    - startInstruction: 236
+      endInstruction: 319
+      startSourceChar: 692
+      endSourceChar: 716
+      line: 24
       lineChar: 48
-      spanCodeSection: "maxHp}\");\r\n\r\n            "
-    - startInstruction: 1436
-      endInstruction: 1435
-      startSourceChar: 1552
-      endSourceChar: 1552
-      line: 52
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 1436
-      endInstruction: 1435
-      startSourceChar: 1552
-      endSourceChar: 1569
-      line: 52
-      lineChar: 12
-      spanCodeSection: 'inDeathProcess = '
-    - startInstruction: 1436
-      endInstruction: 1455
-      startSourceChar: 1569
-      endSourceChar: 1612
-      line: 52
-      lineChar: 29
-      spanCodeSection: "false;\r\n            \r\n        }\r\n\r\n        "
-    - startInstruction: 1456
-      endInstruction: 1455
-      startSourceChar: 1612
-      endSourceChar: 1612
-      line: 56
-      lineChar: 8
-      spanCodeSection: 
-    - startInstruction: 1456
-      endInstruction: 1455
-      startSourceChar: 1612
-      endSourceChar: 1632
-      line: 56
-      lineChar: 8
-      spanCodeSection: player.SetPlayerTag(
-    - startInstruction: 1456
-      endInstruction: 1455
-      startSourceChar: 1632
-      endSourceChar: 1656
-      line: 56
-      lineChar: 28
-      spanCodeSection: '"combat_respawn_timer", '
-    - startInstruction: 1456
-      endInstruction: 1455
-      startSourceChar: 1656
-      endSourceChar: 1658
-      line: 56
-      lineChar: 52
-      spanCodeSection: $"
-    - startInstruction: 1456
-      endInstruction: 1455
-      startSourceChar: 1658
-      endSourceChar: 1659
-      line: 56
-      lineChar: 54
-      spanCodeSection: '{'
-    - startInstruction: 1456
-      endInstruction: 1539
-      startSourceChar: 1659
-      endSourceChar: 1697
-      line: 56
-      lineChar: 55
-      spanCodeSection: "currentRespawnTimer}\");\r\n    }\r\n\r\n    "
-    - startInstruction: 1540
-      endInstruction: 1559
-      startSourceChar: 1697
-      endSourceChar: 1734
-      line: 59
+      spanCodeSection: "maxHp}\");\r\n    }\r\n\r\n    "
+    - startInstruction: 320
+      endInstruction: 339
+      startSourceChar: 716
+      endSourceChar: 743
+      line: 27
       lineChar: 4
-      spanCodeSection: "private void TickHealthStatus()\r\n    "
-    - startInstruction: 1560
-      endInstruction: 1559
-      startSourceChar: 1734
-      endSourceChar: 1745
-      line: 60
+      spanCodeSection: "private void Update()\r\n    "
+    - startInstruction: 340
+      endInstruction: 339
+      startSourceChar: 743
+      endSourceChar: 754
+      line: 28
       lineChar: 4
       spanCodeSection: "{\r\n        "
-    - startInstruction: 1560
-      endInstruction: 1559
-      startSourceChar: 1745
-      endSourceChar: 1745
-      line: 61
-      lineChar: 8
-      spanCodeSection: 
-    - startInstruction: 1560
-      endInstruction: 1559
-      startSourceChar: 1745
-      endSourceChar: 1745
-      line: 61
-      lineChar: 8
-      spanCodeSection: 
-    - startInstruction: 1560
-      endInstruction: 1559
-      startSourceChar: 1745
-      endSourceChar: 1745
-      line: 61
-      lineChar: 8
-      spanCodeSection: 
-    - startInstruction: 1560
-      endInstruction: 1559
-      startSourceChar: 1745
-      endSourceChar: 1754
-      line: 61
-      lineChar: 8
-      spanCodeSection: 'float hp '
-    - startInstruction: 1560
-      endInstruction: 1559
-      startSourceChar: 1754
-      endSourceChar: 1756
-      line: 61
-      lineChar: 17
-      spanCodeSection: '= '
-    - startInstruction: 1560
-      endInstruction: 1559
-      startSourceChar: 1756
-      endSourceChar: 1768
-      line: 61
-      lineChar: 19
-      spanCodeSection: float.Parse(
-    - startInstruction: 1560
-      endInstruction: 1559
-      startSourceChar: 1768
-      endSourceChar: 1788
-      line: 61
-      lineChar: 31
-      spanCodeSection: player.GetPlayerTag(
-    - startInstruction: 1560
-      endInstruction: 1635
-      startSourceChar: 1788
-      endSourceChar: 1814
-      line: 61
-      lineChar: 51
-      spanCodeSection: "\"combat_hp\"));\r\n\r\n        "
-    - startInstruction: 1636
-      endInstruction: 1635
-      startSourceChar: 1814
-      endSourceChar: 1818
-      line: 63
+    - startInstruction: 340
+      endInstruction: 339
+      startSourceChar: 754
+      endSourceChar: 758
+      line: 29
       lineChar: 8
       spanCodeSection: if (
-    - startInstruction: 1636
-      endInstruction: 1635
-      startSourceChar: 1818
-      endSourceChar: 1818
-      line: 63
+    - startInstruction: 340
+      endInstruction: 339
+      startSourceChar: 758
+      endSourceChar: 759
+      line: 29
+      lineChar: 12
+      spanCodeSection: '!'
+    - startInstruction: 340
+      endInstruction: 379
+      startSourceChar: 759
+      endSourceChar: 788
+      line: 29
+      lineChar: 13
+      spanCodeSection: "inDeathProcess)\r\n            "
+    - startInstruction: 380
+      endInstruction: 379
+      startSourceChar: 788
+      endSourceChar: 788
+      line: 30
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1636
-      endInstruction: 1655
-      startSourceChar: 1818
-      endSourceChar: 1823
-      line: 63
+    - startInstruction: 380
+      endInstruction: 379
+      startSourceChar: 788
+      endSourceChar: 788
+      line: 30
       lineChar: 12
-      spanCodeSection: 'hp < '
-    - startInstruction: 1656
-      endInstruction: 1727
-      startSourceChar: 1823
-      endSourceChar: 1835
-      line: 63
-      lineChar: 17
-      spanCodeSection: "0)\r\n        "
-    - startInstruction: 1728
-      endInstruction: 1727
-      startSourceChar: 1835
-      endSourceChar: 1850
-      line: 64
+      spanCodeSection: 
+    - startInstruction: 380
+      endInstruction: 455
+      startSourceChar: 788
+      endSourceChar: 817
+      line: 30
+      lineChar: 12
+      spanCodeSection: "TickHealthStatus();\r\n        "
+    - startInstruction: 456
+      endInstruction: 455
+      startSourceChar: 817
+      endSourceChar: 835
+      line: 31
+      lineChar: 8
+      spanCodeSection: "else\r\n            "
+    - startInstruction: 456
+      endInstruction: 455
+      startSourceChar: 835
+      endSourceChar: 835
+      line: 32
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 456
+      endInstruction: 455
+      startSourceChar: 835
+      endSourceChar: 835
+      line: 32
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 456
+      endInstruction: 531
+      startSourceChar: 835
+      endSourceChar: 869
+      line: 32
+      lineChar: 12
+      spanCodeSection: "TickDeathProcess();\r\n    }\r\n\r\n    "
+    - startInstruction: 532
+      endInstruction: 551
+      startSourceChar: 869
+      endSourceChar: 906
+      line: 35
+      lineChar: 4
+      spanCodeSection: "private void TickDeathProcess()\r\n    "
+    - startInstruction: 552
+      endInstruction: 551
+      startSourceChar: 906
+      endSourceChar: 917
+      line: 36
+      lineChar: 4
+      spanCodeSection: "{\r\n        "
+    - startInstruction: 552
+      endInstruction: 551
+      startSourceChar: 917
+      endSourceChar: 917
+      line: 37
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 552
+      endInstruction: 551
+      startSourceChar: 917
+      endSourceChar: 939
+      line: 37
+      lineChar: 8
+      spanCodeSection: 'currentRespawnTimer = '
+    - startInstruction: 552
+      endInstruction: 551
+      startSourceChar: 939
+      endSourceChar: 939
+      line: 37
+      lineChar: 30
+      spanCodeSection: 
+    - startInstruction: 552
+      endInstruction: 571
+      startSourceChar: 939
+      endSourceChar: 961
+      line: 37
+      lineChar: 30
+      spanCodeSection: 'currentRespawnTimer - '
+    - startInstruction: 572
+      endInstruction: 571
+      startSourceChar: 961
+      endSourceChar: 961
+      line: 37
+      lineChar: 52
+      spanCodeSection: 
+    - startInstruction: 572
+      endInstruction: 571
+      startSourceChar: 961
+      endSourceChar: 966
+      line: 37
+      lineChar: 52
+      spanCodeSection: Time.
+    - startInstruction: 572
+      endInstruction: 639
+      startSourceChar: 966
+      endSourceChar: 993
+      line: 37
+      lineChar: 57
+      spanCodeSection: "fixedDeltaTime;\r\n\r\n        "
+    - startInstruction: 640
+      endInstruction: 639
+      startSourceChar: 993
+      endSourceChar: 993
+      line: 39
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 640
+      endInstruction: 639
+      startSourceChar: 993
+      endSourceChar: 1011
+      line: 39
+      lineChar: 8
+      spanCodeSection: player.TeleportTo(
+    - startInstruction: 640
+      endInstruction: 639
+      startSourceChar: 1011
+      endSourceChar: 1025
+      line: 39
+      lineChar: 26
+      spanCodeSection: 'lastPosition, '
+    - startInstruction: 640
+      endInstruction: 639
+      startSourceChar: 1025
+      endSourceChar: 1025
+      line: 39
+      lineChar: 40
+      spanCodeSection: 
+    - startInstruction: 640
+      endInstruction: 639
+      startSourceChar: 1025
+      endSourceChar: 1048
+      line: 39
+      lineChar: 40
+      spanCodeSection: player.GetTrackingData(
+    - startInstruction: 640
+      endInstruction: 639
+      startSourceChar: 1048
+      endSourceChar: 1048
+      line: 39
+      lineChar: 63
+      spanCodeSection: 
+    - startInstruction: 640
+      endInstruction: 639
+      startSourceChar: 1048
+      endSourceChar: 1048
+      line: 39
+      lineChar: 63
+      spanCodeSection: 
+    - startInstruction: 640
+      endInstruction: 639
+      startSourceChar: 1048
+      endSourceChar: 1061
+      line: 39
+      lineChar: 63
+      spanCodeSection: VRCPlayerApi.
+    - startInstruction: 640
+      endInstruction: 639
+      startSourceChar: 1061
+      endSourceChar: 1078
+      line: 39
+      lineChar: 76
+      spanCodeSection: TrackingDataType.
+    - startInstruction: 640
+      endInstruction: 671
+      startSourceChar: 1078
+      endSourceChar: 1084
+      line: 39
+      lineChar: 93
+      spanCodeSection: Head).
+    - startInstruction: 672
+      endInstruction: 727
+      startSourceChar: 1084
+      endSourceChar: 1106
+      line: 39
+      lineChar: 99
+      spanCodeSection: "rotation);\r\n\r\n        "
+    - startInstruction: 728
+      endInstruction: 727
+      startSourceChar: 1106
+      endSourceChar: 1110
+      line: 41
+      lineChar: 8
+      spanCodeSection: if (
+    - startInstruction: 728
+      endInstruction: 727
+      startSourceChar: 1110
+      endSourceChar: 1110
+      line: 41
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 728
+      endInstruction: 747
+      startSourceChar: 1110
+      endSourceChar: 1132
+      line: 41
+      lineChar: 12
+      spanCodeSection: 'currentRespawnTimer < '
+    - startInstruction: 748
+      endInstruction: 795
+      startSourceChar: 1132
+      endSourceChar: 1145
+      line: 41
+      lineChar: 34
+      spanCodeSection: "0F)\r\n        "
+    - startInstruction: 796
+      endInstruction: 795
+      startSourceChar: 1145
+      endSourceChar: 1160
+      line: 42
       lineChar: 8
       spanCodeSection: "{\r\n            "
-    - startInstruction: 1728
-      endInstruction: 1727
-      startSourceChar: 1850
-      endSourceChar: 1850
-      line: 65
+    - startInstruction: 796
+      endInstruction: 795
+      startSourceChar: 1160
+      endSourceChar: 1164
+      line: 43
       lineChar: 12
+      spanCodeSection: if (
+    - startInstruction: 796
+      endInstruction: 795
+      startSourceChar: 1164
+      endSourceChar: 1164
+      line: 43
+      lineChar: 16
       spanCodeSection: 
-    - startInstruction: 1728
-      endInstruction: 1727
-      startSourceChar: 1850
-      endSourceChar: 1860
-      line: 65
+    - startInstruction: 796
+      endInstruction: 815
+      startSourceChar: 1164
+      endSourceChar: 1178
+      line: 43
+      lineChar: 16
+      spanCodeSection: 'respawnPos != '
+    - startInstruction: 816
+      endInstruction: 863
+      startSourceChar: 1178
+      endSourceChar: 1197
+      line: 43
+      lineChar: 30
+      spanCodeSection: "null)\r\n            "
+    - startInstruction: 864
+      endInstruction: 863
+      startSourceChar: 1197
+      endSourceChar: 1216
+      line: 44
       lineChar: 12
-      spanCodeSection: Debug.Log(
-    - startInstruction: 1728
-      endInstruction: 1727
-      startSourceChar: 1860
-      endSourceChar: 1862
-      line: 65
-      lineChar: 22
-      spanCodeSection: $"
-    - startInstruction: 1728
-      endInstruction: 1747
-      startSourceChar: 1862
-      endSourceChar: 1876
-      line: 65
-      lineChar: 24
-      spanCodeSection: 'CombatSystem: '
-    - startInstruction: 1748
-      endInstruction: 1747
-      startSourceChar: 1876
-      endSourceChar: 1877
-      line: 65
-      lineChar: 38
-      spanCodeSection: '{'
-    - startInstruction: 1748
-      endInstruction: 1747
-      startSourceChar: 1877
-      endSourceChar: 1877
-      line: 65
-      lineChar: 39
+      spanCodeSection: "{\r\n                "
+    - startInstruction: 864
+      endInstruction: 863
+      startSourceChar: 1216
+      endSourceChar: 1216
+      line: 45
+      lineChar: 16
       spanCodeSection: 
-    - startInstruction: 1748
-      endInstruction: 1747
-      startSourceChar: 1877
-      endSourceChar: 1884
-      line: 65
-      lineChar: 39
-      spanCodeSection: player.
-    - startInstruction: 1748
-      endInstruction: 1823
-      startSourceChar: 1884
-      endSourceChar: 1896
-      line: 65
-      lineChar: 46
-      spanCodeSection: displayName}
-    - startInstruction: 1824
-      endInstruction: 1891
-      startSourceChar: 1896
-      endSourceChar: 1925
-      line: 65
-      lineChar: 58
-      spanCodeSection: " has died!\");\r\n\r\n            "
-    - startInstruction: 1892
-      endInstruction: 1891
-      startSourceChar: 1925
-      endSourceChar: 1925
-      line: 67
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 1892
-      endInstruction: 1891
-      startSourceChar: 1925
-      endSourceChar: 1940
-      line: 67
-      lineChar: 12
-      spanCodeSection: 'lastPosition = '
-    - startInstruction: 1892
-      endInstruction: 1891
-      startSourceChar: 1940
-      endSourceChar: 1940
-      line: 67
-      lineChar: 27
-      spanCodeSection: 
-    - startInstruction: 1892
-      endInstruction: 1891
-      startSourceChar: 1940
-      endSourceChar: 1940
-      line: 67
-      lineChar: 27
-      spanCodeSection: 
-    - startInstruction: 1892
-      endInstruction: 1891
-      startSourceChar: 1940
-      endSourceChar: 1947
-      line: 67
-      lineChar: 27
-      spanCodeSection: player.
-    - startInstruction: 1892
-      endInstruction: 1935
-      startSourceChar: 1947
-      endSourceChar: 1977
-      line: 67
+    - startInstruction: 864
+      endInstruction: 863
+      startSourceChar: 1216
+      endSourceChar: 1234
+      line: 45
+      lineChar: 16
+      spanCodeSection: player.TeleportTo(
+    - startInstruction: 864
+      endInstruction: 863
+      startSourceChar: 1234
+      endSourceChar: 1234
+      line: 45
       lineChar: 34
-      spanCodeSection: "GetPosition();\r\n\r\n            "
-    - startInstruction: 1936
-      endInstruction: 1935
-      startSourceChar: 1977
-      endSourceChar: 1977
-      line: 69
+      spanCodeSection: 
+    - startInstruction: 864
+      endInstruction: 863
+      startSourceChar: 1234
+      endSourceChar: 1245
+      line: 45
+      lineChar: 34
+      spanCodeSection: respawnPos.
+    - startInstruction: 864
+      endInstruction: 887
+      startSourceChar: 1245
+      endSourceChar: 1255
+      line: 45
+      lineChar: 45
+      spanCodeSection: 'position, '
+    - startInstruction: 888
+      endInstruction: 887
+      startSourceChar: 1255
+      endSourceChar: 1255
+      line: 45
+      lineChar: 55
+      spanCodeSection: 
+    - startInstruction: 888
+      endInstruction: 887
+      startSourceChar: 1255
+      endSourceChar: 1266
+      line: 45
+      lineChar: 55
+      spanCodeSection: respawnPos.
+    - startInstruction: 888
+      endInstruction: 943
+      startSourceChar: 1266
+      endSourceChar: 1294
+      line: 45
+      lineChar: 66
+      spanCodeSection: "rotation);\r\n                "
+    - startInstruction: 944
+      endInstruction: 943
+      startSourceChar: 1294
+      endSourceChar: 1294
+      line: 46
+      lineChar: 16
+      spanCodeSection: 
+    - startInstruction: 944
+      endInstruction: 943
+      startSourceChar: 1294
+      endSourceChar: 1304
+      line: 46
+      lineChar: 16
+      spanCodeSection: Debug.Log(
+    - startInstruction: 944
+      endInstruction: 943
+      startSourceChar: 1304
+      endSourceChar: 1306
+      line: 46
+      lineChar: 26
+      spanCodeSection: $"
+    - startInstruction: 944
+      endInstruction: 963
+      startSourceChar: 1306
+      endSourceChar: 1331
+      line: 46
+      lineChar: 28
+      spanCodeSection: 'CombatSystem: Teleported '
+    - startInstruction: 964
+      endInstruction: 963
+      startSourceChar: 1331
+      endSourceChar: 1332
+      line: 46
+      lineChar: 53
+      spanCodeSection: '{'
+    - startInstruction: 964
+      endInstruction: 963
+      startSourceChar: 1332
+      endSourceChar: 1332
+      line: 46
+      lineChar: 54
+      spanCodeSection: 
+    - startInstruction: 964
+      endInstruction: 963
+      startSourceChar: 1332
+      endSourceChar: 1339
+      line: 46
+      lineChar: 54
+      spanCodeSection: player.
+    - startInstruction: 964
+      endInstruction: 1039
+      startSourceChar: 1339
+      endSourceChar: 1351
+      line: 46
+      lineChar: 61
+      spanCodeSection: displayName}
+    - startInstruction: 1040
+      endInstruction: 1091
+      startSourceChar: 1351
+      endSourceChar: 1375
+      line: 46
+      lineChar: 73
+      spanCodeSection: ' to respawn position of '
+    - startInstruction: 1092
+      endInstruction: 1091
+      startSourceChar: 1375
+      endSourceChar: 1376
+      line: 46
+      lineChar: 97
+      spanCodeSection: '{'
+    - startInstruction: 1092
+      endInstruction: 1091
+      startSourceChar: 1376
+      endSourceChar: 1376
+      line: 46
+      lineChar: 98
+      spanCodeSection: 
+    - startInstruction: 1092
+      endInstruction: 1091
+      startSourceChar: 1376
+      endSourceChar: 1387
+      line: 46
+      lineChar: 98
+      spanCodeSection: respawnPos.
+    - startInstruction: 1092
+      endInstruction: 1191
+      startSourceChar: 1387
+      endSourceChar: 1396
+      line: 46
+      lineChar: 109
+      spanCodeSection: position}
+    - startInstruction: 1192
+      endInstruction: 1259
+      startSourceChar: 1396
+      endSourceChar: 1431
+      line: 46
+      lineChar: 118
+      spanCodeSection: ".\");\r\n            }\r\n\r\n            "
+    - startInstruction: 1260
+      endInstruction: 1259
+      startSourceChar: 1431
+      endSourceChar: 1431
+      line: 49
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1936
-      endInstruction: 1935
-      startSourceChar: 1977
-      endSourceChar: 1987
-      line: 69
+    - startInstruction: 1260
+      endInstruction: 1259
+      startSourceChar: 1431
+      endSourceChar: 1453
+      line: 49
+      lineChar: 12
+      spanCodeSection: 'currentRespawnTimer = '
+    - startInstruction: 1260
+      endInstruction: 1279
+      startSourceChar: 1453
+      endSourceChar: 1482
+      line: 49
+      lineChar: 34
+      spanCodeSection: "respawnTimer;\r\n\r\n            "
+    - startInstruction: 1280
+      endInstruction: 1279
+      startSourceChar: 1482
+      endSourceChar: 1482
+      line: 51
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 1280
+      endInstruction: 1279
+      startSourceChar: 1482
+      endSourceChar: 1492
+      line: 51
       lineChar: 12
       spanCodeSection: Debug.Log(
-    - startInstruction: 1936
-      endInstruction: 1935
-      startSourceChar: 1987
-      endSourceChar: 1989
-      line: 69
+    - startInstruction: 1280
+      endInstruction: 1279
+      startSourceChar: 1492
+      endSourceChar: 1494
+      line: 51
       lineChar: 22
       spanCodeSection: $"
-    - startInstruction: 1936
-      endInstruction: 1955
-      startSourceChar: 1989
-      endSourceChar: 2003
-      line: 69
+    - startInstruction: 1280
+      endInstruction: 1299
+      startSourceChar: 1494
+      endSourceChar: 1508
+      line: 51
       lineChar: 24
       spanCodeSection: 'CombatSystem: '
-    - startInstruction: 1956
-      endInstruction: 1955
-      startSourceChar: 2003
-      endSourceChar: 2004
-      line: 69
+    - startInstruction: 1300
+      endInstruction: 1299
+      startSourceChar: 1508
+      endSourceChar: 1509
+      line: 51
       lineChar: 38
       spanCodeSection: '{'
-    - startInstruction: 1956
-      endInstruction: 1955
-      startSourceChar: 2004
-      endSourceChar: 2004
-      line: 69
+    - startInstruction: 1300
+      endInstruction: 1299
+      startSourceChar: 1509
+      endSourceChar: 1509
+      line: 51
       lineChar: 39
       spanCodeSection: 
-    - startInstruction: 1956
-      endInstruction: 1955
-      startSourceChar: 2004
-      endSourceChar: 2011
-      line: 69
+    - startInstruction: 1300
+      endInstruction: 1299
+      startSourceChar: 1509
+      endSourceChar: 1516
+      line: 51
       lineChar: 39
       spanCodeSection: player.
-    - startInstruction: 1956
-      endInstruction: 2031
-      startSourceChar: 2011
-      endSourceChar: 2023
-      line: 69
+    - startInstruction: 1300
+      endInstruction: 1375
+      startSourceChar: 1516
+      endSourceChar: 1528
+      line: 51
       lineChar: 46
       spanCodeSection: displayName}
-    - startInstruction: 2032
-      endInstruction: 2099
-      startSourceChar: 2023
-      endSourceChar: 2065
-      line: 69
+    - startInstruction: 1376
+      endInstruction: 1443
+      startSourceChar: 1528
+      endSourceChar: 1568
+      line: 51
       lineChar: 58
-      spanCodeSection: " is now unable to move.\");\r\n\r\n            "
-    - startInstruction: 2100
-      endInstruction: 2099
-      startSourceChar: 2065
-      endSourceChar: 2065
-      line: 71
+      spanCodeSection: " is now able to move.\");\r\n\r\n            "
+    - startInstruction: 1444
+      endInstruction: 1443
+      startSourceChar: 1568
+      endSourceChar: 1568
+      line: 53
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 2100
-      endInstruction: 2099
-      startSourceChar: 2065
-      endSourceChar: 2082
-      line: 71
+    - startInstruction: 1444
+      endInstruction: 1443
+      startSourceChar: 1568
+      endSourceChar: 1568
+      line: 53
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 1444
+      endInstruction: 1443
+      startSourceChar: 1568
+      endSourceChar: 1568
+      line: 53
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 1444
+      endInstruction: 1443
+      startSourceChar: 1568
+      endSourceChar: 1580
+      line: 53
+      lineChar: 12
+      spanCodeSection: 'float maxHp '
+    - startInstruction: 1444
+      endInstruction: 1443
+      startSourceChar: 1580
+      endSourceChar: 1582
+      line: 53
+      lineChar: 24
+      spanCodeSection: '= '
+    - startInstruction: 1444
+      endInstruction: 1443
+      startSourceChar: 1582
+      endSourceChar: 1594
+      line: 53
+      lineChar: 26
+      spanCodeSection: float.Parse(
+    - startInstruction: 1444
+      endInstruction: 1443
+      startSourceChar: 1594
+      endSourceChar: 1614
+      line: 53
+      lineChar: 38
+      spanCodeSection: player.GetPlayerTag(
+    - startInstruction: 1444
+      endInstruction: 1519
+      startSourceChar: 1614
+      endSourceChar: 1646
+      line: 53
+      lineChar: 58
+      spanCodeSection: "\"combat_max_hp\"));\r\n            "
+    - startInstruction: 1520
+      endInstruction: 1519
+      startSourceChar: 1646
+      endSourceChar: 1646
+      line: 54
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 1520
+      endInstruction: 1519
+      startSourceChar: 1646
+      endSourceChar: 1666
+      line: 54
+      lineChar: 12
+      spanCodeSection: player.SetPlayerTag(
+    - startInstruction: 1520
+      endInstruction: 1519
+      startSourceChar: 1666
+      endSourceChar: 1679
+      line: 54
+      lineChar: 32
+      spanCodeSection: '"combat_hp", '
+    - startInstruction: 1520
+      endInstruction: 1519
+      startSourceChar: 1679
+      endSourceChar: 1681
+      line: 54
+      lineChar: 45
+      spanCodeSection: $"
+    - startInstruction: 1520
+      endInstruction: 1519
+      startSourceChar: 1681
+      endSourceChar: 1682
+      line: 54
+      lineChar: 47
+      spanCodeSection: '{'
+    - startInstruction: 1520
+      endInstruction: 1595
+      startSourceChar: 1682
+      endSourceChar: 1707
+      line: 54
+      lineChar: 48
+      spanCodeSection: "maxHp}\");\r\n\r\n            "
+    - startInstruction: 1596
+      endInstruction: 1595
+      startSourceChar: 1707
+      endSourceChar: 1707
+      line: 56
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 1596
+      endInstruction: 1595
+      startSourceChar: 1707
+      endSourceChar: 1724
+      line: 56
       lineChar: 12
       spanCodeSection: 'inDeathProcess = '
-    - startInstruction: 2100
-      endInstruction: 2100
-      startSourceChar: 2082
-      endSourceChar: 2082
+    - startInstruction: 1596
+      endInstruction: 1615
+      startSourceChar: 1724
+      endSourceChar: 1767
+      line: 56
+      lineChar: 29
+      spanCodeSection: "false;\r\n            \r\n        }\r\n\r\n        "
+    - startInstruction: 1616
+      endInstruction: 1615
+      startSourceChar: 1767
+      endSourceChar: 1767
+      line: 60
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 1616
+      endInstruction: 1615
+      startSourceChar: 1767
+      endSourceChar: 1787
+      line: 60
+      lineChar: 8
+      spanCodeSection: player.SetPlayerTag(
+    - startInstruction: 1616
+      endInstruction: 1615
+      startSourceChar: 1787
+      endSourceChar: 1811
+      line: 60
+      lineChar: 28
+      spanCodeSection: '"combat_respawn_timer", '
+    - startInstruction: 1616
+      endInstruction: 1615
+      startSourceChar: 1811
+      endSourceChar: 1813
+      line: 60
+      lineChar: 52
+      spanCodeSection: $"
+    - startInstruction: 1616
+      endInstruction: 1615
+      startSourceChar: 1813
+      endSourceChar: 1814
+      line: 60
+      lineChar: 54
+      spanCodeSection: '{'
+    - startInstruction: 1616
+      endInstruction: 1699
+      startSourceChar: 1814
+      endSourceChar: 1852
+      line: 60
+      lineChar: 55
+      spanCodeSection: "currentRespawnTimer}\");\r\n    }\r\n\r\n    "
+    - startInstruction: 1700
+      endInstruction: 1719
+      startSourceChar: 1852
+      endSourceChar: 1889
+      line: 63
+      lineChar: 4
+      spanCodeSection: "private void TickHealthStatus()\r\n    "
+    - startInstruction: 1720
+      endInstruction: 1719
+      startSourceChar: 1889
+      endSourceChar: 1900
+      line: 64
+      lineChar: 4
+      spanCodeSection: "{\r\n        "
+    - startInstruction: 1720
+      endInstruction: 1719
+      startSourceChar: 1900
+      endSourceChar: 1900
+      line: 65
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 1720
+      endInstruction: 1719
+      startSourceChar: 1900
+      endSourceChar: 1900
+      line: 65
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 1720
+      endInstruction: 1719
+      startSourceChar: 1900
+      endSourceChar: 1900
+      line: 65
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 1720
+      endInstruction: 1719
+      startSourceChar: 1900
+      endSourceChar: 1909
+      line: 65
+      lineChar: 8
+      spanCodeSection: 'float hp '
+    - startInstruction: 1720
+      endInstruction: 1719
+      startSourceChar: 1909
+      endSourceChar: 1911
+      line: 65
+      lineChar: 17
+      spanCodeSection: '= '
+    - startInstruction: 1720
+      endInstruction: 1719
+      startSourceChar: 1911
+      endSourceChar: 1923
+      line: 65
+      lineChar: 19
+      spanCodeSection: float.Parse(
+    - startInstruction: 1720
+      endInstruction: 1719
+      startSourceChar: 1923
+      endSourceChar: 1943
+      line: 65
+      lineChar: 31
+      spanCodeSection: player.GetPlayerTag(
+    - startInstruction: 1720
+      endInstruction: 1795
+      startSourceChar: 1943
+      endSourceChar: 1969
+      line: 65
+      lineChar: 51
+      spanCodeSection: "\"combat_hp\"));\r\n\r\n        "
+    - startInstruction: 1796
+      endInstruction: 1795
+      startSourceChar: 1969
+      endSourceChar: 1973
+      line: 67
+      lineChar: 8
+      spanCodeSection: if (
+    - startInstruction: 1796
+      endInstruction: 1795
+      startSourceChar: 1973
+      endSourceChar: 1973
+      line: 67
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 1796
+      endInstruction: 1815
+      startSourceChar: 1973
+      endSourceChar: 1978
+      line: 67
+      lineChar: 12
+      spanCodeSection: 'hp < '
+    - startInstruction: 1816
+      endInstruction: 1887
+      startSourceChar: 1978
+      endSourceChar: 1990
+      line: 67
+      lineChar: 17
+      spanCodeSection: "0)\r\n        "
+    - startInstruction: 1888
+      endInstruction: 1887
+      startSourceChar: 1990
+      endSourceChar: 2005
+      line: 68
+      lineChar: 8
+      spanCodeSection: "{\r\n            "
+    - startInstruction: 1888
+      endInstruction: 1887
+      startSourceChar: 2005
+      endSourceChar: 2005
+      line: 69
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 1888
+      endInstruction: 1887
+      startSourceChar: 2005
+      endSourceChar: 2015
+      line: 69
+      lineChar: 12
+      spanCodeSection: Debug.Log(
+    - startInstruction: 1888
+      endInstruction: 1887
+      startSourceChar: 2015
+      endSourceChar: 2017
+      line: 69
+      lineChar: 22
+      spanCodeSection: $"
+    - startInstruction: 1888
+      endInstruction: 1907
+      startSourceChar: 2017
+      endSourceChar: 2031
+      line: 69
+      lineChar: 24
+      spanCodeSection: 'CombatSystem: '
+    - startInstruction: 1908
+      endInstruction: 1907
+      startSourceChar: 2031
+      endSourceChar: 2032
+      line: 69
+      lineChar: 38
+      spanCodeSection: '{'
+    - startInstruction: 1908
+      endInstruction: 1907
+      startSourceChar: 2032
+      endSourceChar: 2032
+      line: 69
+      lineChar: 39
+      spanCodeSection: 
+    - startInstruction: 1908
+      endInstruction: 1907
+      startSourceChar: 2032
+      endSourceChar: 2039
+      line: 69
+      lineChar: 39
+      spanCodeSection: player.
+    - startInstruction: 1908
+      endInstruction: 1983
+      startSourceChar: 2039
+      endSourceChar: 2051
+      line: 69
+      lineChar: 46
+      spanCodeSection: displayName}
+    - startInstruction: 1984
+      endInstruction: 2051
+      startSourceChar: 2051
+      endSourceChar: 2080
+      line: 69
+      lineChar: 58
+      spanCodeSection: " has died!\");\r\n\r\n            "
+    - startInstruction: 2052
+      endInstruction: 2051
+      startSourceChar: 2080
+      endSourceChar: 2080
       line: 71
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 2052
+      endInstruction: 2051
+      startSourceChar: 2080
+      endSourceChar: 2095
+      line: 71
+      lineChar: 12
+      spanCodeSection: 'lastPosition = '
+    - startInstruction: 2052
+      endInstruction: 2051
+      startSourceChar: 2095
+      endSourceChar: 2095
+      line: 71
+      lineChar: 27
+      spanCodeSection: 
+    - startInstruction: 2052
+      endInstruction: 2051
+      startSourceChar: 2095
+      endSourceChar: 2095
+      line: 71
+      lineChar: 27
+      spanCodeSection: 
+    - startInstruction: 2052
+      endInstruction: 2051
+      startSourceChar: 2095
+      endSourceChar: 2102
+      line: 71
+      lineChar: 27
+      spanCodeSection: player.
+    - startInstruction: 2052
+      endInstruction: 2095
+      startSourceChar: 2102
+      endSourceChar: 2132
+      line: 71
+      lineChar: 34
+      spanCodeSection: "GetPosition();\r\n\r\n            "
+    - startInstruction: 2096
+      endInstruction: 2095
+      startSourceChar: 2132
+      endSourceChar: 2132
+      line: 73
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 2096
+      endInstruction: 2095
+      startSourceChar: 2132
+      endSourceChar: 2142
+      line: 73
+      lineChar: 12
+      spanCodeSection: Debug.Log(
+    - startInstruction: 2096
+      endInstruction: 2095
+      startSourceChar: 2142
+      endSourceChar: 2144
+      line: 73
+      lineChar: 22
+      spanCodeSection: $"
+    - startInstruction: 2096
+      endInstruction: 2115
+      startSourceChar: 2144
+      endSourceChar: 2158
+      line: 73
+      lineChar: 24
+      spanCodeSection: 'CombatSystem: '
+    - startInstruction: 2116
+      endInstruction: 2115
+      startSourceChar: 2158
+      endSourceChar: 2159
+      line: 73
+      lineChar: 38
+      spanCodeSection: '{'
+    - startInstruction: 2116
+      endInstruction: 2115
+      startSourceChar: 2159
+      endSourceChar: 2159
+      line: 73
+      lineChar: 39
+      spanCodeSection: 
+    - startInstruction: 2116
+      endInstruction: 2115
+      startSourceChar: 2159
+      endSourceChar: 2166
+      line: 73
+      lineChar: 39
+      spanCodeSection: player.
+    - startInstruction: 2116
+      endInstruction: 2191
+      startSourceChar: 2166
+      endSourceChar: 2178
+      line: 73
+      lineChar: 46
+      spanCodeSection: displayName}
+    - startInstruction: 2192
+      endInstruction: 2259
+      startSourceChar: 2178
+      endSourceChar: 2220
+      line: 73
+      lineChar: 58
+      spanCodeSection: " is now unable to move.\");\r\n\r\n            "
+    - startInstruction: 2260
+      endInstruction: 2259
+      startSourceChar: 2220
+      endSourceChar: 2220
+      line: 75
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 2260
+      endInstruction: 2259
+      startSourceChar: 2220
+      endSourceChar: 2237
+      line: 75
+      lineChar: 12
+      spanCodeSection: 'inDeathProcess = '
+    - startInstruction: 2260
+      endInstruction: 2260
+      startSourceChar: 2237
+      endSourceChar: 2237
+      line: 75
       lineChar: 29
       spanCodeSection: 
   hasInteractEvent: 0
@@ -1577,13 +1715,13 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 6
+      Data: 7
     - Name: 
       Entry: 7
       Data: 
     - Name: $k
       Entry: 1
-      Data: respawnTimer
+      Data: maxHp
     - Name: $v
       Entry: 7
       Data: 2|UdonSharp.FieldDefinition, UdonSharp.Editor
@@ -1610,10 +1748,10 @@ MonoBehaviour:
       Data: SystemSingle
     - Name: symbolOriginalName
       Entry: 1
-      Data: respawnTimer
+      Data: maxHp
     - Name: symbolUniqueName
       Entry: 1
-      Data: respawnTimer
+      Data: maxHp
     - Name: symbolDefaultValue
       Entry: 6
       Data: 
@@ -1646,7 +1784,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 1
-      Data: respawnPos
+      Data: respawnTimer
     - Name: $v
       Entry: 7
       Data: 6|UdonSharp.FieldDefinition, UdonSharp.Editor
@@ -1654,14 +1792,8 @@ MonoBehaviour:
       Entry: 7
       Data: 7|UdonSharp.SymbolDefinition, UdonSharp.Editor
     - Name: internalType
-      Entry: 7
-      Data: 8|System.RuntimeType, mscorlib
-    - Name: 
-      Entry: 1
-      Data: UnityEngine.Transform, UnityEngine.CoreModule
-    - Name: 
-      Entry: 8
-      Data: 
+      Entry: 9
+      Data: 4
     - Name: declarationType
       Entry: 3
       Data: 1
@@ -1670,13 +1802,13 @@ MonoBehaviour:
       Data: 0
     - Name: symbolResolvedTypeName
       Entry: 1
-      Data: UnityEngineTransform
+      Data: SystemSingle
     - Name: symbolOriginalName
       Entry: 1
-      Data: respawnPos
+      Data: respawnTimer
     - Name: symbolUniqueName
       Entry: 1
-      Data: respawnPos
+      Data: respawnTimer
     - Name: symbolDefaultValue
       Entry: 6
       Data: 
@@ -1685,7 +1817,7 @@ MonoBehaviour:
       Data: 
     - Name: fieldAttributes
       Entry: 7
-      Data: 9|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+      Data: 8|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
     - Name: 
       Entry: 12
       Data: 0
@@ -1709,31 +1841,37 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 1
-      Data: currentRespawnTimer
+      Data: respawnPos
     - Name: $v
       Entry: 7
-      Data: 10|UdonSharp.FieldDefinition, UdonSharp.Editor
+      Data: 9|UdonSharp.FieldDefinition, UdonSharp.Editor
     - Name: fieldSymbol
       Entry: 7
-      Data: 11|UdonSharp.SymbolDefinition, UdonSharp.Editor
+      Data: 10|UdonSharp.SymbolDefinition, UdonSharp.Editor
     - Name: internalType
-      Entry: 9
-      Data: 4
+      Entry: 7
+      Data: 11|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: UnityEngine.Transform, UnityEngine.CoreModule
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: declarationType
       Entry: 3
-      Data: 2
+      Data: 1
     - Name: syncMode
       Entry: 3
       Data: 0
     - Name: symbolResolvedTypeName
       Entry: 1
-      Data: SystemSingle
+      Data: UnityEngineTransform
     - Name: symbolOriginalName
       Entry: 1
-      Data: currentRespawnTimer
+      Data: respawnPos
     - Name: symbolUniqueName
       Entry: 1
-      Data: currentRespawnTimer
+      Data: respawnPos
     - Name: symbolDefaultValue
       Entry: 6
       Data: 
@@ -1766,7 +1904,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 1
-      Data: inDeathProcess
+      Data: currentRespawnTimer
     - Name: $v
       Entry: 7
       Data: 13|UdonSharp.FieldDefinition, UdonSharp.Editor
@@ -1774,8 +1912,65 @@ MonoBehaviour:
       Entry: 7
       Data: 14|UdonSharp.SymbolDefinition, UdonSharp.Editor
     - Name: internalType
+      Entry: 9
+      Data: 4
+    - Name: declarationType
+      Entry: 3
+      Data: 2
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: SystemSingle
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: currentRespawnTimer
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: currentRespawnTimer
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
       Entry: 7
-      Data: 15|System.RuntimeType, mscorlib
+      Data: 15|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: inDeathProcess
+    - Name: $v
+      Entry: 7
+      Data: 16|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 17|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 7
+      Data: 18|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
       Data: System.Boolean, mscorlib
@@ -1805,7 +2000,7 @@ MonoBehaviour:
       Data: 
     - Name: fieldAttributes
       Entry: 7
-      Data: 16|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+      Data: 19|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
     - Name: 
       Entry: 12
       Data: 0
@@ -1832,13 +2027,13 @@ MonoBehaviour:
       Data: lastPosition
     - Name: $v
       Entry: 7
-      Data: 17|UdonSharp.FieldDefinition, UdonSharp.Editor
+      Data: 20|UdonSharp.FieldDefinition, UdonSharp.Editor
     - Name: fieldSymbol
       Entry: 7
-      Data: 18|UdonSharp.SymbolDefinition, UdonSharp.Editor
+      Data: 21|UdonSharp.SymbolDefinition, UdonSharp.Editor
     - Name: internalType
       Entry: 7
-      Data: 19|System.RuntimeType, mscorlib
+      Data: 22|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -1868,7 +2063,7 @@ MonoBehaviour:
       Data: 
     - Name: fieldAttributes
       Entry: 7
-      Data: 20|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+      Data: 23|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
     - Name: 
       Entry: 12
       Data: 0
@@ -1895,13 +2090,13 @@ MonoBehaviour:
       Data: player
     - Name: $v
       Entry: 7
-      Data: 21|UdonSharp.FieldDefinition, UdonSharp.Editor
+      Data: 24|UdonSharp.FieldDefinition, UdonSharp.Editor
     - Name: fieldSymbol
       Entry: 7
-      Data: 22|UdonSharp.SymbolDefinition, UdonSharp.Editor
+      Data: 25|UdonSharp.SymbolDefinition, UdonSharp.Editor
     - Name: internalType
       Entry: 7
-      Data: 23|System.RuntimeType, mscorlib
+      Data: 26|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
       Data: VRC.SDKBase.VRCPlayerApi, VRCSDKBase
@@ -1931,7 +2126,7 @@ MonoBehaviour:
       Data: 
     - Name: fieldAttributes
       Entry: 7
-      Data: 24|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+      Data: 27|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
     - Name: 
       Entry: 12
       Data: 0
